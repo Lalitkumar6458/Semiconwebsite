@@ -87,8 +87,8 @@ const Footer = () => {
                     </h3>
                     <ul className='mt-[40px] text-[#A0A5B9]'>
                         {
-                            QuickLink.map((item) => {
-                                return <li className=' leading-[40px]'><Link href={item.link} className='flex items-center gap-2 hover:text-white'><MdKeyboardArrowRight />{item.name}
+                            QuickLink.map((item,index) => {
+                                return <li key={index} className=' leading-[40px]'><Link href={item.link} className='flex items-center gap-2 hover:text-white'><MdKeyboardArrowRight />{item.name}
                                 </Link></li>
                             })
                         }
@@ -101,8 +101,8 @@ const Footer = () => {
                     </h3>
                     <ul className='mt-[40px] text-[#A0A5B9]'>
                         {
-                            Community.map((item) => {
-                                return <li className=' leading-[40px]'><Link href={item.link} className='flex items-center gap-2 hover:text-white'><MdKeyboardArrowRight />{item.name}
+                            Community.map((item,index) => {
+                                return <li key={index} className=' leading-[40px]'><Link href={item.link} className='flex items-center gap-2 hover:text-white'><MdKeyboardArrowRight />{item.name}
                                 </Link></li>
                             })
                         }
