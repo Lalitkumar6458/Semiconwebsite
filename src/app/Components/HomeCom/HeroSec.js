@@ -13,7 +13,7 @@ const HeroSec = () => {
                 <div className='w-full h-full flex items-center justify-center mt-[105px]'>
                     <div className=''>
                         <div class="content">
-                            <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">// Transforming Dreams into Digital Reality</h3>
+                            <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// Transforming Dreams into Digital Reality"}</h3>
 
                             <h1 class="title whitespace-nowrap relative text-white text-[35px] leading-[35px] md:text-[56px] font-bold md:leading-[56px] mb-[20px] z-[1]">Best IT Solutions And  <br/><span  className='flex gap-3 relative'> Great <UnderlineHeading text={"Business"}/></span>
                             </h1>
