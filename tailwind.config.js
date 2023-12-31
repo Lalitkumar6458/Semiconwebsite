@@ -16,7 +16,10 @@ module.exports = {
     blueDark:"#060924",
     orangeClr:'#ff6900',
     lighBlue:"#4f7efa",
-    iconBg:"rgba(255,255,255,0.1)"
+    iconBg:"rgba(255,255,255,0.1)",
+    borderClr:"rgba(255, 255, 255, 0.2)",
+    hoverClr:"rgba(255, 255, 255, 0.05)",
+    countBg:"rgba(255, 255, 255, 0.08)"
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],

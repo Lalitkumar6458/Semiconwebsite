@@ -116,7 +116,7 @@ const Footer = () => {
                     <p className='mt-[40px] mb-[20px]'>88 Broklyn Street, 600 New
                         York, USA</p>
                     <div className='flex items-center gap-2 leading-[40px] hover:text-white'>
-                        <FaGlobe className='  text-lighBlue' />  www.yourweb.com
+                        <FaGlobe className='  text-lighBlue' />  www.semicon.com
                     </div>
                     <div className='flex items-center gap-2 leading-[40px] hover:text-white cursor-pointer'>
                         <MdEmail className='  text-lighBlue' /> semiconinfotech@gmail.com

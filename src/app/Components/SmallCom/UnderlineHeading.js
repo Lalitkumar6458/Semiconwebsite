@@ -1,12 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
 
-const UnderlineHeading = ({text}) => {
+const UnderlineHeading = ({text,top}) => {
   return (
     <div className='textBox'>
-    <span className='text-lighBlue'>{text}</span>
-    <Image className='uderlineImg' src={require("../../../../public/Images/hero3-underline.png")}/>
-    </div>
+    <span className='underlineImg text-lighBlue relative' style={{ position: 'relative', display: 'inline-block' }}>
+      {text}
+      <Image
+        className={`underlineImg absolute top-[${top}]`}
+        src={require("../../../../public/Images/hero3-underline.png")}
+    
+      />
+    </span>
+  </div>
   )
 }
 

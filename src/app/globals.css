@@ -43,7 +43,10 @@ display: block;
 .description {
     
 }
- /* .title span .uderlineImg {
+.uderlineImg{
+    position: relative;
+}
+ /* .textBox .uderlineImg {
     content: '';
     position: absolute;
     background: url(../../public/Images/hero3-underline.png);

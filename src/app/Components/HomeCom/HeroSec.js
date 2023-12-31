@@ -15,7 +15,7 @@ const HeroSec = () => {
                         <div class="content">
                             <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// Transforming Dreams into Digital Reality"}</h3>
 
-                            <h1 class="title whitespace-nowrap relative text-white text-[35px] leading-[35px] md:text-[56px] font-bold md:leading-[56px] mb-[20px] z-[1]">Best IT Solutions And  <br/><span  className='flex gap-3 relative'> Great <UnderlineHeading text={"Business"}/></span>
+                            <h1 class="title whitespace-nowrap relative text-white text-[35px] leading-[35px] md:text-[56px] font-bold md:leading-[56px] mb-[20px] z-[1]">Best IT Solutions And  <br/><span  className='flex gap-3 relative'> Great <UnderlineHeading text={"Business"} top={"51px"}/></span>
                             </h1>
 
                             <h5 class="description text-[#a0a5b9] mb-[36px]" >Revolutionize your business with <span className=' text-lighBlue font-Oswald font-semibold'>SemiCon</span>. Seamlessly integrate innovation, explore limitless possibilities, and embark on a transformative digital journey</h5>
