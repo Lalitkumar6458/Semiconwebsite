@@ -33,7 +33,7 @@ const WhyChooseSec = () => {
                     <div className=''>
                         <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// REASON FOR CHOOSE US"}</h3>
 
-                        <h1 class="title whitespace-nowrap relative text-white text-[30px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[50px] z-[1] flex gap-3 flex-wrap">We're the Best Digital <span className='flex gap-3 relative'> <br className=' block md:hidden' />  <UnderlineHeading text={"Solution"} top={"48px"} />
+                        <h1 class="title whitespace-nowrap relative text-white text-[30px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[50px] z-[1] flex gap-3 flex-wrap">{"We're the Best Digital"} <span className='flex gap-3 relative'> <br className=' block md:hidden' />  <UnderlineHeading text={"Solution"} top={"48px"} />
 
                         </span>
                             <span className='text-white text-[35px] leading-[35px]'>Provider Company</span>
@@ -42,8 +42,8 @@ const WhyChooseSec = () => {
 
                     <div className=''>
                         {
-                            data.map((item) => {
-                                return <div className='flex text-white mt-6 group'>
+                            data.map((item,index) => {
+                                return <div key={index} className='flex text-white mt-6 group'>
                                     <div className=' relative w-[100px]'>
                                         <div className='p-[18px] absolute group-hover:bg-lighBlue transition-all duration-700 group-hover:text-white  mb-5 rounded-[5px] mr-[30px] bg-iconBg flex items-center justify-center text-[30px] text-lighBlue'>
                                             {item.icon}
