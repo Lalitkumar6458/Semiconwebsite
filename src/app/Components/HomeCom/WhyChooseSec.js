@@ -10,19 +10,19 @@ const WhyChooseSec = () => {
         {
             id: 1,
             heading: "Worldwide Services",
-            text: "There are many lorem Ipsum available but to the majority that’s randomised words which don't look",
+            text: "There are many lorem Ipsum available but to the majority that's randomised words which don't look",
             icon: <IoGlobeOutline />
         },
         {
             id: 2,
             heading: "Flexible Pricing Plans",
-            text: "There are many lorem Ipsum available but to the majority that’s randomised words which don't look",
+            text: "There are many lorem Ipsum available but to the majority that's randomised words which don't look",
             icon: <FaHandHoldingUsd />
         },
         {
             id: 3,
             heading: "24/7 Service & Supports",
-            text: "There are many lorem Ipsum available but to the majority that’s randomised words which don't look",
+            text: "There are many lorem Ipsum available but to the majority that's randomised words which don't look",
             icon: <RiCustomerService2Fill />
         },
     ]

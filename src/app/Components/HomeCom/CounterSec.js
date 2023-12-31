@@ -37,7 +37,7 @@ const CounterSec = () => {
     <div className=' relative z-50 px-[4%] text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full place-items-center'>
     {
         data.map((item,index)=>{
-            return   <Counter index={index} item={item}/>
+            return   <Counter key={index} index={index} item={item}/>
         })
     }
  
