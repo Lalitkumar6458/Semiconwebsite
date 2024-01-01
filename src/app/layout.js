@@ -1,5 +1,5 @@
-"use client"
-import { useEffect } from 'react';
+
+
 import Footer from './Components/Base/Footer'
 import Header from './Components/Base/Header'
 import './globals.css'
