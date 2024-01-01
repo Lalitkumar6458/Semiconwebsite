@@ -7,44 +7,152 @@ const ServicesSec = () => {
     {
       id:1,
       heading:"Web Development",
-      desc:'',
+      desc:'Elevate your brand with captivating visual design, embodying our core philosophy. Our approach blends elegance and impact, creating a distinct and memorable brand identity.',
       link:'',
-      img:'https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais'
+      img:'https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
+      list:[
+        {
+          name:"UI/UX Design"
+        },
+        {
+          name:'HTML Website Design'
+        },
+        {
+          name:'E-Commerce Website'
+        },
+        {
+          name:"Web Application"
+        },
+        {
+          name:'Mobile-First Development'
+        },
+       
+      ]
     },
     {
       id:2,
       heading:"Apps Development",
-      desc:'',
+      desc:'Innovative mobile app development tailored to your needs. Enhance your digital presence and achieve business goals with user-centric solutions crafted for success.',
       link:'',
-      img:'https://img.freepik.com/free-vector/source-code-concept-illustration_114360-5487.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais'
+      img:'https://img.freepik.com/free-vector/source-code-concept-illustration_114360-5487.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
+      list:[
+        {
+          name:"Mobile App Design"
+        },
+        {
+          name:'Cross-Platform App Development'
+        },
+        {
+          name:'Native App Development'
+        },
+        {
+          name:"Mobile App Testing"
+        },
+        {
+          name:'App Maintenance and Support'
+        },
+       
+      ]
     },
     {
       id:3,
       heading:"Website Care",
-      desc:'',
+      desc:"Elevate your website's performance with our meticulous care services. We prioritize optimal functionality, security, and a seamless user experience, ensuring your online presence thrives effortlessly.",
       link:'',
-      img:'https://img.freepik.com/free-vector/tiny-people-testing-quality-assurance-software-isolated-flat-vector-illustration-cartoon-character-fixing-bugs-hardware-device-application-test-it-service-concept_74855-10172.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais'
+      img:'https://img.freepik.com/free-vector/tiny-people-testing-quality-assurance-software-isolated-flat-vector-illustration-cartoon-character-fixing-bugs-hardware-device-application-test-it-service-concept_74855-10172.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
+      list:[
+        {
+          name:"Security Audits and Enhancements"
+        },
+        {
+          name:'Software Updates and Maintenance'
+        },
+        {
+          name:'Backup Solutions'
+        },
+        {
+          name:"Performance Optimization"
+        },
+        {
+          name:'Content Updates and Management'
+        },
+       
+      ]
     },
     {
       id:4,
       heading:"Domain & Hosting",
-      desc:'',
+      desc:"Reliable domain and hosting solutions, providing a secure foundation for your online presence. Elevate your website's performance with our robust and scalable hosting services.",
       link:'',
-      img:'https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149250983.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais'
+      img:'https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149250983.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
+      list:[
+        {
+          name:"Domain Registration"
+        },
+        {
+          name:'Web Hosting Solutions'
+        },
+        {
+          name:'SSL Certificates'
+        },
+        {
+          name:"Server Configuration and Management"
+        },
+        {
+          name:'24/7 Technical Support'
+        },
+       
+      ]
     },
     {
       id:5,
       heading:"Digital Marketing",
-      desc:'',
+      desc:"Boost your brand's online presence with our strategic digital marketing solutions. From SEO to social media, we drive visibility and engagement for your business success",
       link:'',
-      img:'https://img.freepik.com/free-vector/marketing-consulting-concept-illustration_114360-9027.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais'
+      img:'https://img.freepik.com/free-vector/marketing-consulting-concept-illustration_114360-9027.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
+      list:[
+        {
+          name:"Search Engine Optimization (SEO)"
+        },
+        {
+          name:'Social Media Marketing'
+        },
+        {
+          name:'Content Marketing'
+        },
+        {
+          name:"Pay-Per-Click (PPC) Advertising"
+        },
+        {
+          name:'Analytics and Reporting'
+        },
+       
+      ]
     },
     {
       id:6,
       heading:"Email Solution ",
-      desc:'',
+      desc:'Elevate your communication game with our efficient email solutions. Streamline your messaging and enhance collaboration for seamless business communication.',
       link:'',
-      img:'https://img.freepik.com/free-vector/email-marketing-internet-chatting-24-hours-support_335657-3009.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais'
+      img:'https://img.freepik.com/free-vector/email-marketing-internet-chatting-24-hours-support_335657-3009.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
+      list:[
+        {
+          name:"Custom Email Setup"
+        },
+        {
+          name:'Google Workspace'
+        },
+        {
+          name:'Zoho Mail'
+        },
+        {
+          name:"Security and Compliance"
+        },
+        {
+          name:'Email Analytics and Reporting'
+        },
+       
+      ]
     }
   ]
   return (

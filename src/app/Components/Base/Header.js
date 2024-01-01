@@ -6,6 +6,7 @@ import { BiSearch } from "react-icons/bi";
 import { TiInfoLarge } from "react-icons/ti";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import Image from 'next/image';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 const[isMobileTabShow,setIsMobileTabShow]=useState(false)
@@ -67,7 +68,7 @@ link:'/'
   return (
     <div className={`fixed top-0 w-full px-[6%] text-white py-4 z-50 ${isScrolled ? ' bg-blueDark' : ''}`}>
 <div className={`flex items-center relative justify-between ${isScrolled ? ' bg-blueDark' : ''} `}>
-<h1>SemiConInfo</h1>
+<Image className='w-[200px] h-[50px]' src={require("../../../../public/Images/logo.png")} alt='semicon' />
 <div className=''>
 <ul className='md:flex items-center gap-5 hidden'>
 {

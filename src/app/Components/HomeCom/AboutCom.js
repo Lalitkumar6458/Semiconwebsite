@@ -23,7 +23,7 @@ const AboutCom = () => {
 </h1>
 </div>
 <p className='text-[#a0a5b9]'>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Unlock the power of innovation with our web and app development solutions. From cutting-edge websites to dynamic mobile applications, we turn your ideas into digital realities. Elevate your online presence with our expert development services – where creativity meets functionality.
 </p>
 <ProggressCom text="Development" percentage={90} />
 <ProggressCom text="UI/UX Design" percentage={70} />

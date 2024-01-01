@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-
+import { FaAnglesRight } from "react-icons/fa6";
 const ServiceCard = ({data}) => {
   return (
     <article className="overflow-hidden rounded-lg border border-borderClr  bg-transparent shadow-sm">
@@ -17,12 +17,20 @@ const ServiceCard = ({data}) => {
         </h3>
       </a>
   
-      <p className="mt-2 text-gray-500 line-clamp-3 text-sm/relaxed c">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-        pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis quidem,
-        mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius atque
-        dignissimos. Molestias explicabo corporis voluptatem?
+      <p className="mt-2 text-textClr line-clamp-4 text-sm/relaxed c">
+      {data.desc}
       </p>
+      <div className='text-textClr mt-2'>
+      <ul>
+      {
+        data.list.map((item)=>{
+          return <li className='flex items-center gap-2 text-sm/relaxed mt-1'>
+          <FaAnglesRight /> {item.name}
+          </li>
+        })
+      }
+      </ul>
+      </div>
   
       <Link href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600">
         Find out more

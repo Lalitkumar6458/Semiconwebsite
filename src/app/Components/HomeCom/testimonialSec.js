@@ -36,7 +36,7 @@ const TestimonialSec = () => {
     <div className='flex items-center flex-col'>
     <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// CLIENT TESTIMONIAL"}</h3>
     
-    <h1 class="title text-center whitespace-nowrap relative text-white text-[26px] leading-[35px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1] flex gap-3 flex-wrap">
+    <h1 class="title text-center whitespace-nowrap relative text-white text-[20 px] leading-[35px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1] flex gap-3 flex-wrap">
     Clients Rely on Our Expertise in <br/>Website Design and SEO.
     </h1>
     </div>

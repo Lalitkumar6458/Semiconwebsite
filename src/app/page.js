@@ -7,6 +7,7 @@ import WhyChooseSec from './Components/HomeCom/WhyChooseSec'
 import ContactSec from './Components/HomeCom/ContactSec'
 import PortfolioSec from './Components/HomeCom/PortfolioSec'
 import TestimonialSec from './Components/HomeCom/testimonialSec'
+import BrandSec from './Components/HomeCom/BrandSec'
 export default function Home() {
   return (
     <main >
@@ -19,6 +20,7 @@ export default function Home() {
 <PortfolioSec/>
 <ContactSec/>
 <TestimonialSec/>
+<BrandSec/>
 </div>
     </main>
   )

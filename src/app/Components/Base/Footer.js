@@ -63,7 +63,7 @@ const Footer = () => {
             <div className='grid grid-cols-1 gap-[40px] md:grid-cols-2 lg:grid-cols-4 z-40 relative px-[4%] md:gap-3'>
                 <div className='text-white'>
                     <img src='https://urnothemes.com/solute/wp-content/uploads/2023/01/logo.png' className='mb-[40px] ' />
-                    <p className='mb-3'>Lesires to obtain pain of itself because pain, but occasionally circumstances.
+                    <p className='mb-3'>We specialize in crafting exceptional websites and apps, translating ideas into sophisticated digital solutions. Our dedicated team ensures an effective online presence for your business
 
                     </p>
                     <div className='flex items-center gap-2 mt-[30px]'>
