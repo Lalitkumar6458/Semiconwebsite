@@ -23,8 +23,8 @@ const ServiceCard = ({data}) => {
       <div className='text-textClr mt-2'>
       <ul>
       {
-        data.list.map((item)=>{
-          return <li className='flex items-center gap-2 text-sm/relaxed mt-1'>
+        data.list.map((item,index)=>{
+          return <li key={index} className='flex items-center gap-2 text-sm/relaxed mt-1'>
           <FaAnglesRight /> {item.name}
           </li>
         })
