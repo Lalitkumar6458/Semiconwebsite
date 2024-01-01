@@ -6,10 +6,10 @@ const ContactSec = () => {
   return (
     <div className=' px-[3%] my-5 w-fit h-auto'>
     <div className='relative h-full'>
-    <Image className=' h-full absolute w-full' src={require("../../../../public/Images/call-to-action5.png")}/>
-    <div className=' relative grid grid-cols-1 md:grid-cols-2 px-[50px] py-[22px]'>
+    <Image className=' h-full absolute w-full rounded-[20px]' src={require("../../../../public/Images/call-to-action5.png")}/>
+    <div className=' relative grid grid-cols-1 md:grid-cols-2 px-[50px] py-[22px] gap-[30px]'>
     <div className='flex  justify-center flex-col'>
-<h2 className='text-[38px] font-semibold text-white font-Roboto'>Let’s Create an Amazing <br/> Project Together</h2>
+<h2 className='text-[30px]  md:text-[38px] font-semibold text-white font-Roboto'>Let’s Create an Amazing <br className=' hidden md:block'/> Project Together</h2>
 <p className='text-white'>There are many lorem Ipsum available but the majority have in randomised words which even slightly</p>
 <div class="button-set mt-[40px]">
 <button class="relative flex rounded-[30px] items-center w-fit gap-3 text-[17px] py-[18px] px-[25px] !bg-[#fff] text-lighBlue" href="">
