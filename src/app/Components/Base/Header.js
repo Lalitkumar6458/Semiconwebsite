@@ -62,7 +62,7 @@ submenu:[
 link:'/'
 },
 {name:'Contact',
-link:'/'
+link:'/contact'
 },
   ]
   return (
