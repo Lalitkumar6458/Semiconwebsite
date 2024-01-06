@@ -7,6 +7,7 @@ import { TiInfoLarge } from "react-icons/ti";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import Image from 'next/image';
+import { ThemeSwitcher } from './ThemeSwitcher';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 const[isMobileTabShow,setIsMobileTabShow]=useState(false)
@@ -66,9 +67,10 @@ link:'/contact'
 },
   ]
   return (
-    <div className={`fixed top-0 w-full px-[6%] text-white py-4 z-50 ${isScrolled ? ' bg-blueDark' : ''}`}>
+    <div className={`fixed top-0 w-full px-[6%]  py-4 z-50 ${isScrolled ? ' bg-blueDark text-white' : 'text-[#060922] dark:text-white'}`}>
 <div className={`flex items-center relative justify-between ${isScrolled ? ' bg-blueDark' : ''} `}>
 <Image className='w-[200px] h-[50px]' src={require("../../../../public/Images/logo.png")} alt='semicon' />
+
 <div className=''>
 <ul className='md:flex items-center gap-5 hidden'>
 {
@@ -104,6 +106,7 @@ link:'/contact'
 <div className='hover:scale-125 flex  md:hidden transition-all duration-700  cursor-pointer bg-iconBg rounded-full  items-center justify-center p-2 text-[18px]' onClick={()=>setIsMobileTabShow(!isMobileTabShow)}>
 {isMobileTabShow?<IoClose />:<GiHamburgerMenu  />}
 </div>
+<ThemeSwitcher isScrolled={isScrolled}  />
 </div>
 <div className={` absolute transition-all duration-700 ease-in-out bg-white rounded-2xl overflow-y-auto flex items-center justify-center w-full  ${isMobileTabShow?' h-[60vh]':'h-[0px]'} top-[115%]`}>
 <ul className='flex flex-col gap-2 p-2 w-full'>

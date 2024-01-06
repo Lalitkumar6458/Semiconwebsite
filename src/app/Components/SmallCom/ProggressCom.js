@@ -4,7 +4,7 @@ const ProggressCom = ({text,percentage}) => {
   return (
     <div>
     
-    <div className='flex items-center text-[16px] font-Roboto  justify-between mt-6 text-white mb-3 transition-all ease-in-out duration-700' style={{width:percentage+"%"}}>
+    <div className='flex items-center text-[16px] font-Roboto  justify-between mt-6 text-headingClg dark:text-white mb-3 transition-all ease-in-out duration-700' style={{width:percentage+"%"}}>
 <div className=''>{text}</div>
 <div className='transition-all ease-in-out duration-700'>{percentage} %</div>
 

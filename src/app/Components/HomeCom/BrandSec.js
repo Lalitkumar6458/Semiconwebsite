@@ -29,12 +29,12 @@ const BrandSec = () => {
         },
     ]
   return (
-    <div className='w-full  bg-[#181d42] px-[4%] py-[5%]'>
+    <div className='w-full bg-white dark:bg-[#181d42] px-[4%] py-[5%]'>
     <div className=''>
     <div className='flex items-center flex-col'>
     <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// OUR CLIENT"}</h3>
     
-    <h1 class="title text-center whitespace-nowrap relative text-white text-[18px] leading-[25px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1] flex gap-3 flex-wrap">
+    <h1 class="title text-center whitespace-nowrap relative text-headingClg dark:text-white text-[18px] leading-[25px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1] flex gap-3 flex-wrap">
   {"We worked with India's largest brands"}
     </h1>
     </div>

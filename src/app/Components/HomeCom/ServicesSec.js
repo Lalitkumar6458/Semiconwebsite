@@ -32,7 +32,9 @@ const ServicesSec = () => {
     {
       id:2,
       heading:"Apps Development",
-      desc:'Innovative mobile app development tailored to your needs. Enhance your digital presence and achieve business goals with user-centric solutions crafted for success.',
+      desc:`Innovative mobile app development tailored to your needs. Enhance your digital presence and achieve business goals with user-centric solutions crafted for success.
+      
+      `,
       link:'',
       img:'https://img.freepik.com/free-vector/source-code-concept-illustration_114360-5487.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
       list:[
@@ -156,12 +158,12 @@ const ServicesSec = () => {
     }
   ]
   return (
-    <div className='w-full  bg-[#060B2B] px-[4%] py-[5%]'>
+    <div className='w-full bg-white dark:bg-[#060B2B] px-[4%] py-[5%]'>
 <div className='flex items-center justify-between flex-wrap'>
 <div className=''>
 <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// SERVICE WE PROVIDE"}</h3>
 
-<h1 class="title whitespace-nowrap relative text-white text-[35px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap">Services What We  <span  className='flex gap-3 relative'> <br className=' block md:hidden'/>  <UnderlineHeading text={"Provides"} top={"48px"}/></span>
+<h1 class="title whitespace-nowrap relative text-headingClg dark:text-white text-[35px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap">Services What We  <span  className='flex gap-3 relative'> <br className=' block md:hidden'/>  <UnderlineHeading text={"Provides"} top={"48px"}/></span>
 </h1>
 </div>
 <div className=''>

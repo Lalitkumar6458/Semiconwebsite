@@ -21,14 +21,19 @@ module.exports = {
     borderClr:"rgba(255, 255, 255, 0.2)",
     hoverClr:"rgba(255, 255, 255, 0.05)",
     countBg:"rgba(255, 255, 255, 0.08)",
-    textClr:"#A0A5B9"
+    textClr:"#A0A5B9",
+    headingClg:'#060922',
+    cardBorder:'rgba(9, 175, 244, 0.35)'
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'Oswald':[ 'Oswald','sans-serif'],
         'Roboto':['Roboto',' sans-serif'],
+      },boxShadow:{
+        cardShadow:'0px 0px 10px 0px rgba(6, 9, 34, 0.1)'
       }
     },
   },
   plugins: [],
+  darkMode: 'class',
 }

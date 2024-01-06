@@ -31,12 +31,12 @@ const TestimonialSec = () => {
    
     ]
   return (
-    <div className='w-full  bg-[#060B2B] px-[4%] py-[5%]'>
+    <div className='w-full bg-white  dark:bg-[#060B2B] px-[4%] py-[5%]'>
     <div className=''>
     <div className='flex items-center flex-col'>
     <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// CLIENT TESTIMONIAL"}</h3>
     
-    <h1 class="title text-center whitespace-nowrap relative text-white text-[20 px] leading-[35px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1] flex gap-3 flex-wrap">
+    <h1 class="title text-center whitespace-nowrap relative text-black dark:text-white text-[20 px] leading-[35px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1] flex gap-3 flex-wrap">
     Clients Rely on Our Expertise in <br/>Website Design and SEO.
     </h1>
     </div>
@@ -44,18 +44,18 @@ const TestimonialSec = () => {
 
     <div className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-6'>
     {Data.map((item)=>{
-        return <div key={item.id} className=' transition-all duration-700 ease-in-out rounded-[10px] border border-iconBg hover:border-[#4f7efa] hover:bg-hoverClr'>
+        return <div key={item.id} className=' transition-all duration-700 ease-in-out rounded-[10px] shadow-cardShadow border border-cardBorder hover:border-[#4f7efa] hover:bg-hoverClr'>
         <div className='px-[40px] pt-[40px] pb-[38px]'>
 <div className='flex items-center gap-[30px]'>
 <div className=''>
 <Image src={item.img} width={70} height={70} className='w-[70px] h-[70px] rounded-full'/>
 </div>
-<div className='text-white'>
+<div className='dark:text-white text-black'>
 <h2 className=' text-[22px] font-bold'>{item.name}</h2>
-<h5 className=' text-textClr'>{item.dsgn}</h5>
+<h5 className=' dark:text-textClr text-black'>{item.dsgn}</h5>
 </div>
 </div>
-<div className='mt-6 text-textClr'>
+<div className='mt-6 dark:text-textClr text-black'>
 <p className='leading-[32px]'>
 {item.text}
 </p>

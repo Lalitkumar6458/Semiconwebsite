@@ -43,12 +43,12 @@ const PortfolioSec = () => {
 
     ]
   return (
-    <div className='w-full  bg-[#060B2B] px-[4%] py-[5%]'>
+    <div className='w-full bg-white dark:bg-[#060B2B] px-[4%] py-[5%]'>
     <div className='flex justify-between'>
     <div className=''>
     <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// LATEST PORTFOLIO"}</h3>
     
-    <h1 class="title whitespace-nowrap relative text-white text-[30px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap">Our Latest Case  <span  className='flex gap-3 relative'> <br className=' block md:hidden'/>  <UnderlineHeading text={"Studies"} top={"40px"}/>
+    <h1 class="title whitespace-nowrap relative text-headingClg dark:text-white text-[30px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap">Our Latest Case  <span  className='flex gap-3 relative'> <br className=' block md:hidden'/>  <UnderlineHeading text={"Studies"} top={"40px"}/>
     
     </span>
 
@@ -57,15 +57,15 @@ const PortfolioSec = () => {
     <div className='md:flex items-center gap-[20px] hidden'>
     <Image src={require("../../../../public/Images/icons/portfolio5-icon.png")} alt="images icon" />
     <div className=''>
-    <h1 className='text-[38px] font-bold font-Roboto text-white'>15 +</h1>
-    <h4 className=' text-textClr text-[16px]'>Project Completed</h4>
+    <h1 className='text-[38px] font-bold font-Roboto text-headingClg dark:text-white'>15 +</h1>
+    <h4 className=' text-headingClg dark:text-textClr text-[16px]'>Project Completed</h4>
     </div>
     </div>
     </div>
  <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-[40px]'>
  {data.map((item)=>{
-    return (<div className="h-[250px] relative overflow-hidden group" key={item.id}>
-    <Image className='w-full h-full object-fill  rounded-[10px]' src={item.img}/>
+    return (<div className="h-[250px] relative overflow-hidden group shadow-cardShadow border-cardBorder" key={item.id}>
+     <Image className='w-full h-full object-fill  rounded-[10px]' src={item.img}/>
     <div className=' absolute top-[251px] group-hover:top-0  transition-all duration-700 ease-in-out w-full h-full   left-0 right-0 rounded-[10px] overflow-hidden'>
     <div className='h-[80%] w-full bg-bgClr opacity-[0.7] '>
     
