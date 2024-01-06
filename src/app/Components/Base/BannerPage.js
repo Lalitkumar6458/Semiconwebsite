@@ -14,7 +14,7 @@ const BannerPage = ({heading,bredcrum}) => {
   <div className='flex items-center gap-3 justify-center'>
   {
     bredcrum?.map((item,index)=>{
-        return <div className='flex items-center gap-2 text-white'>
+        return <div className='flex items-center gap-2 text-white' key={index}>
         <Link className='flex items-center gap-2 font-semibold cursor-pointer' href={item.link}>{item.icon&&item.icon}{item.name}</Link>{bredcrum.length-1!==index?"/":null}
         </div>
     })
