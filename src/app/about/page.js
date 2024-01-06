@@ -88,7 +88,7 @@ const AboutUs = () => {
     </h1>
     </div>
     <p>
-Semicon is not just a web development company; it's a visionary force redefining the industry. Our Mumbai-based Technology Development and Innovation center drives cutting-edge web solutions for diverse clients, from startups to established companies. Through our affiliate, we excel in SEO, website design, and digital marketing, propelling clients to online success. Rooted in a client-centric ethos, our professional team transforms research into intelligent solutions, crafting comprehensive brands. With expertise in mobile app development and a vision to lead in India, we invite you to join us on a transformative journey, delivering measurable business value through technology across web development, digital marketing, and mobile apps.
+{`Semicon is not just a web development company; it's a visionary force redefining the industry. Our Mumbai-based Technology Development and Innovation center drives cutting-edge web solutions for diverse clients, from startups to established companies. Through our affiliate, we excel in SEO, website design, and digital marketing, propelling clients to online success. Rooted in a client-centric ethos, our professional team transforms research into intelligent solutions, crafting comprehensive brands. With expertise in mobile app development and a vision to lead in India, we invite you to join us on a transformative journey, delivering measurable business value through technology across web development, digital marketing, and mobile apps.`}
     </p>
     </div>
     <div className='flex items-center justify-center'>
@@ -118,8 +118,8 @@ Semicon is not just a web development company; it's a visionary force redefining
 
 <div className=' w-full flex items-center md:flex-row flex-col '>
 {
-    workFlowData.map((item)=>{
-        return <div className='w-[500px]   '>
+    workFlowData.map((item,index)=>{
+        return <div className='w-[500px]   ' key={index}>
 
         <div className='w-full  '>
         <h5 className='text-center mb-6'>Step 0{item.id}</h5>

@@ -146,9 +146,9 @@ let  phoneNumber="+919326875077"
       Get In Touch
     </h3>
     <p className="text-[0.8rem] md:text-[1rem] dark:text-gray-500 text-headingClg ">
-      We've got answers! If you have any questions, feedback, or
+  {`We've got answers! If you have any questions, feedback, or
       inquiries, feel free to get in touch with us using the Contact Info.
-      Our team will get back to you as soon as possible.
+      Our team will get back to you as soon as possible.`}
     </p>
   </div>
   <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-7 gap-y-4 dark:text-white text-headingClg ">
