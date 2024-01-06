@@ -8,20 +8,23 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import Image from 'next/image';
 import { ThemeSwitcher } from './ThemeSwitcher';
+import { usePathname } from 'next/navigation'
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 const[isMobileTabShow,setIsMobileTabShow]=useState(false)
+const pathname=usePathname()
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     // You can adjust the scroll threshold as needed
     setIsScrolled(scrollPosition > 0);
   };
-
+  console.log("location",pathname)
   useEffect(() => {
     // Add scroll event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
 
     // Remove scroll event listener when the component unmounts
+   
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -31,7 +34,7 @@ const[isMobileTabShow,setIsMobileTabShow]=useState(false)
     link:'/'
   },
   {name:'About',
-  link:'/'
+  link:'/about'
 },
 {name:'Services',
 link:'/',
@@ -67,7 +70,7 @@ link:'/contact'
 },
   ]
   return (
-    <div className={`fixed top-0 w-full px-[6%]  py-4 z-50 ${isScrolled ? ' bg-blueDark text-white' : 'text-[#060922] dark:text-white'}`}>
+    <div className={`fixed top-0 w-full px-[6%]  py-4 z-50 ${isScrolled ?  ' bg-blueDark text-white' : pathname==='/'?'text-[#060922] dark:text-white':'text-white'}`}>
 <div className={`flex items-center relative justify-between ${isScrolled ? ' bg-blueDark' : ''} `}>
 <Image className='w-[200px] h-[50px]' src={require("../../../../public/Images/logo.png")} alt='semicon' />
 
@@ -100,7 +103,7 @@ link:'/contact'
 <div className=' hover:scale-125 transition-all duration-700 cursor-pointer bg-iconBg rounded-full flex items-center justify-center p-2 text-[18px]'>
 <BiSearch />
 </div>
-<div className='hover:scale-125 transition-all duration-700  cursor-pointer bg-iconBg rounded-full flex items-center justify-center p-2 text-[18px]'>
+<div className='hover:scale-125 hidden transition-all duration-700  cursor-pointer bg-iconBg rounded-full  items-center justify-center p-2 text-[18px]'>
 <TiInfoLarge />
 </div>
 <div className='hover:scale-125 flex  md:hidden transition-all duration-700  cursor-pointer bg-iconBg rounded-full  items-center justify-center p-2 text-[18px]' onClick={()=>setIsMobileTabShow(!isMobileTabShow)}>

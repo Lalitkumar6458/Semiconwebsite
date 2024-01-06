@@ -23,19 +23,19 @@ if(type==='enter'){
   
   </div>
     <div className="p-4 sm:p-6  relative  group-hover:text-white">
-      <a href="#">
-        <h3 className="text-[24px] font-semibold text-headingClg dark:text-white group-hover:text-white transition-all duration-700">
+     
+        <h3 className="text-[20px]  font-semibold text-headingClg dark:text-white group-hover:text-white transition-all duration-700">
          {data.heading}
         </h3>
-      </a>
+
   
-      <p className="mt-2 text-headingClg group-hover:text-white dark:text-textClr line-clamp-4 text-sm/relaxed c transition-all duration-700">
+      <p className="mt-2 text-headingClg group-hover:text-white dark:text-textClr  text-sm/relaxed c transition-all duration-700">
       {data.desc}
       </p>
       <div className='text-headingClg dark:text-textClr mt-2 group-hover:text-white transition-all duration-700'>
       <ul>
       {
-        data.list.map((item,index)=>{
+        data?.list?.map((item,index)=>{
           return <li key={index} className='flex items-center gap-2 text-sm/relaxed mt-1'>
           <FaAnglesRight /> {item.name}
           </li>
@@ -43,14 +43,16 @@ if(type==='enter'){
       }
       </ul>
       </div>
+  {
+    data.link&&    <Link href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 group-hover:text-white">
+    Find out more
+
+    <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+      &rarr;
+    </span>
+  </Link>
+  }
   
-      <Link href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 group-hover:text-white">
-        Find out more
-  
-        <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-          &rarr;
-        </span>
-      </Link>
     </div>
   </article>
   )
