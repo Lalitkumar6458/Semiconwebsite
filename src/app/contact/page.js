@@ -194,7 +194,7 @@ let  phoneNumber="+919326875077"
       You Have Question?
     </h2>
     <p className="text-[0.9rem] md:text-[1rem] dark:text-slate-400 text-headingClg">
-      Contact us using the form below,and we'll be happy to assist you.
+     {`Contact us using the form below,and we'll be happy to assist you.`}
     </p>
 
     <div className="mt-5">
