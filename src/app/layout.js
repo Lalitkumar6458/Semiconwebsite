@@ -1,4 +1,4 @@
-"use client"
+
 import Footer from './Components/Base/Footer'
 import Header from './Components/Base/Header'
 import './globals.css'
