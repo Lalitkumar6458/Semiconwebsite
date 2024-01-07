@@ -4,6 +4,7 @@ import { IoHomeOutline } from 'react-icons/io5'
 import Image from 'next/image'
 import UnderlineHeading from '../Components/SmallCom/UnderlineHeading'
 import ServiceCard from '../Components/SmallCom/ServiceCard'
+import WorkFlow from './WorkFlow'
 
 const AboutUs = () => {
     const bredcrum=[
@@ -38,39 +39,65 @@ const AboutUs = () => {
             desc:'Semicon aspires to lead in India, delivering measurable business value through technology. Join us on this journey, where we redefine the web development and digital marketing landscape.'
         }
     ]
-    const workFlowData=[
-
-        {
-            id:1,
-            heading:"Understand",
-            text:'Understand Clients Requirements'
-        },
-        {
-            id:2,
-            heading:"Plan & Sketch",
-            text:'Choosing Tailored Afforadable Plans'
-        },
-        {
-            id:3,
-            heading:"Execution & Developement ",
-            text:'Project Executions and Developing as per clients Requirements.'
-        },
-        {
-            id:4,
-            heading:"User Testing",
-            text:'We look forward to engage with beyond the conventional'
-        },
-        {
-            id:5,
-            heading:"Host",
-            text:'We look forward to engage with beyond the conventional'
-        },
-        {
-            id:6,
-            heading:"Internet Marketing",
-            text:'We look forward to engage with beyond the conventional'
-        },
-    ]
+const techStack=[
+    {
+        id:1,
+        heading:"Frontend Development",
+        techList:[
+            {
+                id:1,
+                img:require('../../../public/Images/techIcon/reactjs.png'),
+                name:'React Js'
+            },
+            {
+                id:1,
+               img:require('../../../public/Images/techIcon/angular.png'),
+                name:'Angular'
+            },
+            {
+                id:1,
+               img:require('../../../public/Images/techIcon/nextjs.svg'),
+                name:'Next Js'
+            },
+        ]
+    },
+    {
+        id:2,
+        heading:"Backend Development",
+        techList:[
+            {
+                id:1,
+               img:require('../../../public/Images/techIcon/nodejs.svg'),
+                name:'ExpressJs'
+            },
+            {
+                id:1,
+               img:require('../../../public/Images/techIcon/django.png'),
+                name:'Django'
+            },
+        ]
+    },
+    {
+        id:3,
+        heading:"App Developemnt",
+        techList:[
+            {
+                id:1,
+               img:require('../../../public/Images/techIcon/flutter.svg'),
+                name:'Flutter'
+            },
+            {
+                id:2,
+               img:require('../../../public/Images/techIcon/reactjs.png'),
+                name:'React Native'
+            },{
+                id:2,
+               img:require('../../../public/Images/techIcon/electron.png'),
+                name:'Electron Js'
+            }
+        ]
+    },
+]
   return (
     <div>
 
@@ -114,32 +141,39 @@ const AboutUs = () => {
     </span>
     </h1>
     </div>
-<div className='w-full overflow-x-auto'>
+<div className='w-full overflow-x-auto mt-[40px]'>
+<WorkFlow/>
+</div>
+<div className=' mt-[40px]'>
+<div className=''>
+<h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// Tech Stack"}</h3>
 
-<div className=' w-full flex items-center md:flex-row flex-col '>
+<h1 class="title whitespace-nowrap relative text-headingClg dark:text-white text-[30px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap">
+We Use<span  className='flex gap-3 relative'>   <UnderlineHeading text={"Technology"} top={"48px"}/>
+</span>
+</h1>
+</div>
+<div className='grid grid-cols-1  lg:grid-cols-3 md:grid-cols-2 gap-5 mt-[40px]'>
+
 {
-    workFlowData.map((item,index)=>{
-        return <div className='w-[500px]   ' key={index}>
+    techStack.map((item)=>{
+        return <div className='p-3 rounded-xl shadow-cardShadow border border-cardBorder  flex items-center  flex-col' key={item.id}>
+                <h1 className='text-[20px] font-bold'>{item.heading}</h1>
+                <div className='grid grid-cols-3 md:grid-cols-3 place-items-center mt-3'>
 
-        <div className='w-full  '>
-        <h5 className='text-center mb-6'>Step 0{item.id}</h5>
-        <div className='h-[1px] w-full border-[1px] border-black flex items-center justify-center'>
-        <div className='h-[17px] w-[17px] p-[2px] rounded-full bg-white'>
-        <div className='rounded-full w-full h-full bg-yellow-500'></div>
-        </div>
-        </div>
-        </div>
-        <div className='text-center '>
-        <h1 className='text-[4rem]  font-bold text-slate-200'>0{item.id}</h1>
-        <h3 className=' font-bold'>
-        {item.heading}
-        </h3>
-        <p className='h-[80px] text-[13px] mt-2 text-gray-600 font-medium'>{item.text}</p>
-
-        </div>
+                {
+                    item.techList.map((each)=>{
+                        return <div className='flex items-center justify-center flex-col gap-2  p-2 ' key={each.id}>
+                        <Image className='w-[100px] h-[100px] bg-white rounded-xl p-2' src={each.img} />
+                        <h4 className='text-[16px] font-semibold'>{each.name}</h4>
+                        </div>
+                    })
+                }
+                </div>
         </div>
     })
 }
+
 </div>
 </div>
     </div>
