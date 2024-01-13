@@ -37,7 +37,7 @@ if(type==='enter'){
       {
         data?.list?.map((item,index)=>{
           return <li key={index} className='flex items-center gap-2 text-sm/relaxed mt-1'>
-          <FaAnglesRight /> {item.name}
+          <FaAnglesRight /> {item.heading}
           </li>
         })
       }

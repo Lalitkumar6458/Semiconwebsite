@@ -94,7 +94,7 @@ const Page = ({params}) => {
                 })
             }
             <div className='bg-bgClr flex items-center justify-center flex-col gap-3 rounded-xl p-3'>
-            <MdEmail className='text-[1.7rem]' />
+            <MdEmail className='text-[1.7rem] text-white' />
             <h3 className='text-center text-[1.3rem]'>WE ARE ALWAYS HAPPY TO HELP GET IN TOUCH WITH US TODAY!
             </h3>
             <button className='bg-blueDark text-white rounded-md p-2 opacity-[0.65] hover:opacity-[1] transition-all duration-500 ease-in-out'>
