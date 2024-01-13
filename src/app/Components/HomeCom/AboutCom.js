@@ -4,6 +4,7 @@ import UnderlineHeading from '../SmallCom/UnderlineHeading'
 import ProggressCom from '../SmallCom/ProggressCom'
 
 import { FiArrowUpRight } from "react-icons/fi";
+import ComButton from '../SmallCom/ComButton';
 const AboutCom = () => {
   return (
     <div className='w-full bg-white dark:bg-[#060B2B] px-[4%] py-[5%]'>
@@ -28,12 +29,10 @@ Unlock the power of innovation with our web and app development solutions. From 
 <ProggressCom text="Development" percentage={90} />
 <ProggressCom text="UI/UX Design" percentage={70} />
 <ProggressCom text="IT Consulting" percentage={60} />
-
-<div class="button-set mt-[40px]">
-<a class="hero-btn1 flex items-center gap-3 text-white" href="">
-More About    <FiArrowUpRight />                     
-</a>
+<div className='mt-[40px]'>
+<ComButton heading={"More About"} link={'/about'}/>
 </div>
+
 <div>
   
     </div>

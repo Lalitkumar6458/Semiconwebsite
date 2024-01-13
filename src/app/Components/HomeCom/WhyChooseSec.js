@@ -5,6 +5,7 @@ import { IoGlobeOutline } from "react-icons/io5";
 import { FaHandHoldingUsd,FaBalanceScale ,FaPuzzlePiece,FaLightbulb   } from "react-icons/fa";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { FiArrowUpRight } from 'react-icons/fi';
+import ComButton from '../SmallCom/ComButton';
 const WhyChooseSec = () => {
     const data = [
         {
@@ -64,10 +65,8 @@ const WhyChooseSec = () => {
                         }
                     </div>
 
-                    <div class="button-set mt-[40px]">
-                        <a class="hero-btn1 flex items-center gap-3 text-white" href="">
-                            All Services      <FiArrowUpRight />
-                        </a>
+                    <div className='mt-[40px]'>
+                    <ComButton heading={"All Services"} link={'/services'}/>
                     </div>
 
                 </div>

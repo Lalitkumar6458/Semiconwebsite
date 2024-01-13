@@ -24,6 +24,9 @@ export default function RootLayout({ children }) {
   return (
 
     <html lang="en">
+    <head>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer data-deferred="1"></script>
+    </head>
     <body className="relative bg-white dark:bg-blueDark">
 
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

@@ -73,7 +73,7 @@ display: block;
     bottom: -5px;
 } */
 
-.button-set a {
+.button-set button {
     position: relative;
     width: fit-content;
     font-size: 17px;
@@ -102,5 +102,8 @@ position: relative;
     clip-path: polygon(50% 100%, 100% 0%, 100% 100%, 0 100%);
     background: rgba(72, 32, 167, 0.5);
     transition: all 0.25s ease-in-out 0s;
+}
+.ServicesImg{
+    /* mix-blend-mode:darken; */
 }
 

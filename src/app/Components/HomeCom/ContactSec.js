@@ -1,8 +1,10 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import { FiArrowUpRight } from 'react-icons/fi'
-
+import { useRouter } from 'next/navigation';
 const ContactSec = () => {
+  const router=useRouter()
   return (
     <div className=' px-[3%] my-5 w-fit h-auto'>
     <div className='relative h-full'>
@@ -12,7 +14,7 @@ const ContactSec = () => {
 <h2 className='text-[30px]  md:text-[38px] font-semibold text-white font-Roboto'>Let’s Create an Amazing <br className=' hidden md:block'/> Project Together</h2>
 <p className='text-white'>{"Embark on a journey of creativity as we collaborate to bring your project to life. Let's create something amazing together"}</p>
 <div class="button-set mt-[40px]">
-<button class="relative flex rounded-[30px] items-center w-fit gap-3 text-[17px] py-[18px] px-[25px] !bg-[#fff] text-lighBlue" href="">
+<button onClick={()=>router.push("/contact")} class="relative flex rounded-[30px] items-center w-fit gap-3 text-[17px] py-[18px] px-[25px] !bg-[#fff] text-lighBlue" style={{background:'#fff'}}>
 Contact Us    <FiArrowUpRight />                     
 </button>
 </div>

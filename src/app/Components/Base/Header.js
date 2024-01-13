@@ -37,7 +37,7 @@ const pathname=usePathname()
   link:'/about'
 },
 {name:'Services',
-link:'/',
+link:'/services',
 submenu:[
 {
   name:"Website Devlopment",
@@ -47,6 +47,27 @@ submenu:[
   name:"App Developmwnt",
   link:""
 },
+
+{
+  name:"Website Care",
+  link:""
+},
+
+{
+  name:"Domain & Hosting",
+  link:""
+},
+
+{
+  name:"Digital Marketing",
+  link:""
+},
+
+{
+  name:"Email Solution",
+  link:""
+},
+
 ]
 },
 {name:'Products',

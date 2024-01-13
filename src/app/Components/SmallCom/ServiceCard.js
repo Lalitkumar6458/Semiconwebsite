@@ -44,7 +44,7 @@ if(type==='enter'){
       </ul>
       </div>
   {
-    data.link&&    <Link href="#" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 group-hover:text-white">
+    data.link&&    <Link href={'/services/'+data.link} className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-blue-600 group-hover:text-white">
     Find out more
 
     <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">

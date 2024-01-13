@@ -23,7 +23,8 @@ module.exports = {
     countBg:"rgba(255, 255, 255, 0.08)",
     textClr:"#A0A5B9",
     headingClg:'#060922',
-    cardBorder:'rgba(9, 175, 244, 0.35)'
+    cardBorder:'rgba(9, 175, 244, 0.35)',
+    activeList:`rgba(6, 9, 34,1)`
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
