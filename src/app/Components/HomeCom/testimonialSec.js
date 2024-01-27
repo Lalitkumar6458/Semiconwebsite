@@ -18,7 +18,7 @@ const TestimonialSec = () => {
     {
       id: 2,
       name: 'Dasrat Modi',
-      img: require("../../../../public/Images/icons/testi5-img3.png"),
+      img: require("../../../../public/Images/icons/dasrathImg.jpg"),
       dsgn: "Founder",
       text: "I am exceptionally satisfied with the work undertaken by Semicon. Their dedicated effort to bring my vision to life for our company's website exceeded my expectations",
       logo: require("../../../../public/Images/icons/logo2.png")
@@ -26,7 +26,7 @@ const TestimonialSec = () => {
     {
       id: 3,
       name: 'Rajesh Deora',
-      img: require("../../../../public/Images/icons/testi5-img3.png"),
+      img: require("../../../../public/Images/icons/rajeshImg.jpg"),
       dsgn: "CEO & Founder",
       text: "Semicon's expert team provided diverse design options with exceptionally competitive pricing, delivering high-quality services within my budget - a pleasant surprise",
       logo: require("../../../../public/Images/icons/trlogo.png")

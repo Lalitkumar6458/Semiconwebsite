@@ -72,22 +72,22 @@ submenu:[
 
 ]
 },
-{name:'Products',
-link:'/',
-submenu:[
-  {
-    name:"Pmi Report System",
-    link:""
-  },
-  {
-    name:"GST Bill System",
-    link:""
-  },
-]
-},
-{name:'Blog',
-link:'/'
-},
+// {name:'Products',
+// link:'/',
+// submenu:[
+//   {
+//     name:"Pmi Report System",
+//     link:""
+//   },
+//   {
+//     name:"GST Bill System",
+//     link:""
+//   },
+// ]
+// },
+// {name:'Blog',
+// link:'/'
+// },
 {name:'Contact',
 link:'/contact'
 },
