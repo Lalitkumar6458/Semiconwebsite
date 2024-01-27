@@ -109,9 +109,13 @@ const techStack=[
     <div className=''>
     <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// About Us"}</h3>
     
-    <h1 class="title whitespace-nowrap relative text-headingClg dark:text-white text-[30px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap">
-    Empowering Transformation:<br className='block md:hidden'/> Our Vision at <span  className='flex gap-3 relative'>   <UnderlineHeading text={"Semicon"} top={"48px"}/> for <br className='block md:hidden'/>  Optimal Services
+    <h1 class="title whitespace-nowrap relative text-headingClg dark:text-white text-[22px] leading-[25px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap">
+    Empowering Transformation:<br className='block md:hidden'/><span className='flex gap-2'>
+    Our Vision at <span  className='flex gap-3 relative'>   <UnderlineHeading text={"Semicon"} top={"48px"}/> <br className='block md:hidden'/>
     </span>
+    </span>
+    <br className='block md:hidden'/>
+    <span> for Optimal Services</span>
     </h1>
     </div>
     <p>

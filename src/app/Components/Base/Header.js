@@ -9,7 +9,7 @@ import { IoClose } from "react-icons/io5";
 import Image from 'next/image';
 import { ThemeSwitcher } from './ThemeSwitcher';
 import { usePathname } from 'next/navigation'
-const Header = () => {
+const Header = ({MobileTab}) => {
   const [isScrolled, setIsScrolled] = useState(false);
 const[isMobileTabShow,setIsMobileTabShow]=useState(false)
 const pathname=usePathname()
@@ -20,11 +20,13 @@ const pathname=usePathname()
   };
   console.log("location",pathname)
   useEffect(() => {
+
     // Add scroll event listener when the component mounts
     window.addEventListener('scroll', handleScroll);
 
     // Remove scroll event listener when the component unmounts
    
+    setIsMobileTabShow(false)
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
