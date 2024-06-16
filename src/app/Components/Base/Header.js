@@ -8,10 +8,29 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import Image from 'next/image';
 import { ThemeSwitcher } from './ThemeSwitcher';
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
+import { Drawer } from 'antd';
+import { FaSearch,FaBars, FaMinus } from 'react-icons/fa'
+import {FiPlus} from "react-icons/fi"
+import {LiaAngleDownSolid, LiaAngleRightSolid, LiaAngleUpSolid} from "react-icons/lia"
+
 const Header = ({MobileTab}) => {
   const [isScrolled, setIsScrolled] = useState(false);
 const[isMobileTabShow,setIsMobileTabShow]=useState(false)
+const[mobileheaderChildShow,setMobileHeaderChildShow]=useState({
+  Product:false,
+  Services:false,
+  Alloys:false
+})
+const pathName=usePathname()
+
+const [open, setOpen] = useState(false);
+const showDrawer = () => {
+  setOpen(true);
+};
+const onClose = () => {
+  setOpen(false);
+};
 const pathname=usePathname()
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
@@ -31,6 +50,11 @@ const pathname=usePathname()
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  useEffect(()=>{
+    setOpen(false)
+  },[
+    pathName
+  ])
   const Manu=[
     {name:'Home',
     link:'/'
@@ -88,10 +112,22 @@ submenu:[
 // {name:'Blog',
 // link:'/'
 // },
+{name:'Portfolio',
+  link:'/portfolio'
+},
 {name:'Contact',
 link:'/contact'
 },
   ]
+  const showSubmenuMobile=(name)=>{
+
+    setMobileHeaderChildShow(
+      {
+        ...mobileheaderChildShow,
+        [name]:!mobileheaderChildShow[name]
+      }
+    )
+  }
   return (
     <div className={`fixed top-0 w-full h-[60px] px-[6%]  z-50 ${isScrolled ?  ' bg-blueDark text-white' : pathname==='/'?'text-[#060922] dark:text-white':'text-white'}`}>
 <div className={`flex items-center relative justify-between ${isScrolled ? ' bg-blueDark' : ''} `}>
@@ -129,8 +165,8 @@ link:'/contact'
 <div className='hover:scale-125 hidden transition-all duration-700  cursor-pointer bg-iconBg rounded-full  items-center justify-center p-2 text-[18px]'>
 <TiInfoLarge />
 </div>
-<div className='hover:scale-125 flex  md:hidden transition-all duration-700  cursor-pointer bg-iconBg rounded-full  items-center justify-center p-2 text-[18px]' onClick={()=>setIsMobileTabShow(!isMobileTabShow)}>
-{isMobileTabShow?<IoClose />:<GiHamburgerMenu  />}
+<div className='hover:scale-125 flex  md:hidden transition-all duration-700  cursor-pointer bg-iconBg rounded-full  items-center justify-center p-2 text-[18px]' onClick={()=>showDrawer()}>
+{<GiHamburgerMenu  />}
 </div>
 <ThemeSwitcher isScrolled={isScrolled}  />
 </div>
@@ -159,6 +195,88 @@ link:'/contact'
 </ul>
 </div>
 </div>
+<Drawer
+title="Shemicon Info Tech"
+width={300}
+placement="right"
+onClose={onClose}
+open={open}
+>
+<div className="">
+  <ul>
+    {Manu.map((item, index) => {
+      return (
+        <li className=" text-[1.2rem] pb-[10px] font-Roboto font-medium">
+          <div className="flex items-center" key={item.name}>
+            <Link href={item.link}>{item.name}</Link>
+            {item.submenu ? (
+              mobileheaderChildShow[item.name] ? (
+                <FaMinus
+                  className="ml-[5px] cursor-pointer"
+                  onClick={() => showSubmenuMobile(item.name)}
+                />
+              ) : (
+                <FiPlus
+                  className="ml-[5px] cursor-pointer"
+                  onClick={() => showSubmenuMobile(item.name)}
+                />
+              )
+            ) : null}
+          </div>
+          {item.submenu ? (
+            <ul
+              className={`h-fit ml-5 shadow ${
+                mobileheaderChildShow[item.name] ? "" : "hidden"
+              }`}
+            >
+              {item.submenu.map((item, index) => {
+                return (
+                  <li className="px-2 py-2" key={item.name}>
+                    <div className="flex items-center">
+                      <Link href={item.link}>{item.name}</Link>
+                      {item.submenu ? (
+                        mobileheaderChildShow[item.name] ? (
+                          <FaMinus
+                            className="ml-[5px] cursor-pointer"
+                            onClick={() => showSubmenuMobile(item.name)}
+                          />
+                        ) : (
+                          <FiPlus
+                            className="ml-[5px] cursor-pointer"
+                            onClick={() => showSubmenuMobile(item.name)}
+                          />
+                        )
+                      ) : null}
+                    </div>
+                    {item.submenu ? (
+                      <ul
+                        className={`h-fit ml-5 shadow ${
+                          mobileheaderChildShow[item.name]
+                            ? ""
+                            : "hidden"
+                        }`}
+                      >
+                        {item.submenu.map((item, index) => {
+                          return (
+                            <li className="px-2 py-2" key={item.name}>
+                              <Link href={item.link}>{item.name}</Link>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    ) : null}
+                  </li>
+                );
+              })}
+            </ul>
+          ) : null}
+        </li>
+      );
+    })}
+  </ul>
+
+</div>
+</Drawer>
     </div>
   )
 }

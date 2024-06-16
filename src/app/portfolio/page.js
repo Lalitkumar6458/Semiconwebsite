@@ -18,7 +18,7 @@ const page = () => {
   return (
     <div>
     <BannerPage heading={"Our Portfolio"} bredcrum={bredcrum}/>
-<div className='pb-8'>
+<div className='pb-8 px-[5%]'>
 <PortfolioCom DataShow={9}/>
 </div>
     </div>

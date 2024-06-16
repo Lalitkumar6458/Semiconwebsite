@@ -123,7 +123,7 @@ let  phoneNumber="+919326875077"
        id: 4,
        heading: "Address",
        value: [
-         "D-88, GOPAL CHARAN INDUSTRIAL GLOBE , NEAR ROAD NO.5, GIDC-KATHWADA, AHMEDABAD, Ahmedabad, Gujarat, 382430",
+         "6th Khetwadi Lane, Mumbai: 400004",
        ],
        icon: <FaLocationDot />,
      },
