@@ -93,9 +93,9 @@ link:'/contact'
 },
   ]
   return (
-    <div className={`fixed top-0 w-full px-[6%]  py-4 z-50 ${isScrolled ?  ' bg-blueDark text-white' : pathname==='/'?'text-[#060922] dark:text-white':'text-white'}`}>
+    <div className={`fixed top-0 w-full h-[60px] px-[6%]  z-50 ${isScrolled ?  ' bg-blueDark text-white' : pathname==='/'?'text-[#060922] dark:text-white':'text-white'}`}>
 <div className={`flex items-center relative justify-between ${isScrolled ? ' bg-blueDark' : ''} `}>
-<Image className='w-[200px] h-[50px]' src={require("../../../../public/Images/logo.png")} alt='semicon' />
+<Image className='w-[200px] h-[60px]' src={"/Images/shemiconlogo.png"} width={445} height={178} alt='Shemicon' />
 
 <div className=''>
 <ul className='md:flex items-center gap-5 hidden'>

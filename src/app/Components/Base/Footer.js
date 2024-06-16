@@ -62,7 +62,7 @@ const Footer = () => {
             <Image className=' absolute top-0 w-full h-full object-cover' src={require("../../../../public/Images/footer-dark-bg.jpg")} />
             <div className='grid grid-cols-1 gap-[40px] md:grid-cols-2 lg:grid-cols-4 z-40 relative px-[4%] md:gap-3'>
                 <div className='text-white'>
-                    <img src='https://urnothemes.com/solute/wp-content/uploads/2023/01/logo.png' className='mb-[40px] ' />
+                    <img src='/Images/shemiconlogo.png' className='w-[250px] h-[90px]' />
                     <p className='mb-3 text-textClr'>We specialize in crafting exceptional websites and apps, translating ideas into sophisticated digital solutions. Our dedicated team ensures an effective online presence for your business
 
                     </p>
@@ -116,10 +116,10 @@ const Footer = () => {
                     <p className='mt-[40px] mb-[20px]'>88 Broklyn Street, 600 New
                         York, USA</p>
                     <div className='flex items-center gap-2 leading-[40px] hover:text-white'>
-                        <FaGlobe className='  text-lighBlue' />  www.semicon.com
+                        <FaGlobe className='  text-lighBlue' />  www.Shemicon.com
                     </div>
                     <div className='flex items-center gap-2 leading-[40px] hover:text-white cursor-pointer'>
-                        <MdEmail className='  text-lighBlue' /> semiconinfotech@gmail.com
+                        <MdEmail className='  text-lighBlue' /> Shemiconinfotech@gmail.com
                     </div>
                     <div className='flex items-center gap-2 leading-[40px] hover:text-white cursor-pointer'>
                         <FaPhone className='  text-lighBlue' />  9326875077
@@ -133,7 +133,7 @@ const Footer = () => {
             </div>
             <div className='h-[100px] w-full flex items-center justify-center relative px-[4%]'>
             <div className='text-[#A0A5B9]'>
-            Copyright © 2023 semicon | Powered by Semicon
+            Copyright © 2023 Shemicon | Powered by Shemicon
             </div>
             </div>
         </div>

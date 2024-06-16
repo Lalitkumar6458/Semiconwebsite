@@ -64,7 +64,7 @@ const HeroSec = () => {
                   >
                     Revolutionize your business with{' '}
                     <span className=' text-lighBlue font-Oswald font-semibold'>
-                      SemiCon
+                      Shemicon
                     </span>
                     . Seamlessly integrate innovation, explore limitless possibilities,
                     and embark on a transformative digital journey

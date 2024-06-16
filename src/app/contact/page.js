@@ -108,7 +108,7 @@ let  phoneNumber="+919326875077"
      {
        id: 2,
        heading: "EMAIL",
-       value: ["semiconinfotech@gmail.com"],
+       value: ["Shemiconinfotech@gmail.com"],
        icon: <FaEnvelope/>,
        event:handleEmailClick
      },

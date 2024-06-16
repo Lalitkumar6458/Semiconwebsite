@@ -5,6 +5,7 @@ import { useInView } from 'react-cool-inview';
 import UnderlineHeading from '../SmallCom/UnderlineHeading'
 import Image from 'next/image'
 import { FiArrowUpRight } from 'react-icons/fi'
+import PortfolioCom from '../SmallCom/PortfolioCom';
 
 const PortfolioSec = () => {
     const data=[
@@ -87,26 +88,7 @@ const PortfolioSec = () => {
     </div>
     </div>
     </div>
- <motion.div  variants={{
-    visible: { transition: { staggerChildren: 0.5, delayChildren: 0.3,duration:0.7 } },
-  }} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-[40px]'>
- {data.map((item)=>{
-    return (<motion.div 
-        variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0,transition:{duration:0.7} } }}
-        className="h-[250px] relative overflow-hidden group shadow-cardShadow border-cardBorder" key={item.id}>
-     <Image className='w-full h-full object-fill  rounded-[10px]' src={item.img}/>
-    <div className=' absolute top-[251px] group-hover:top-0  transition-all duration-700 ease-in-out w-full h-full   left-0 right-0 rounded-[10px] overflow-hidden'>
-    <div className='h-[80%] w-full bg-bgClr opacity-[0.7] '>
-    
-    </div>
-    <div className='h-[20%] w-full bg-white flex items-center justify-between'>
-    <h3 className='w-[80%] pl-5 font-semibold font-Roboto text-black'>{item.heading}</h3>
-    <button className='h-full bg-bgClr w-[20%] flex items-center justify-center text-white text-[18px]'><FiArrowUpRight /></button>
-    </div>
-    </div>          
-    </motion.div>)
- })}
- </motion.div>
+    <PortfolioCom />
     </motion.div>
   )
 }

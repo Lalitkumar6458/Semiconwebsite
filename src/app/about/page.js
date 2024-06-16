@@ -22,12 +22,12 @@ const AboutUs = () => {
         {
             id:1,
             heading:'Web Development Mastery',
-            desc:'Semicon excels in crafting superior web solutions. Our Mumbai-based Technology Development and Innovation center ensures cutting-edge development for clients, spanning startups to established companies.'
+            desc:'Shemicon excels in crafting superior web solutions. Our Mumbai-based Technology Development and Innovation center ensures cutting-edge development for clients, spanning startups to established companies.'
         },
         {
             id:2,
             heading:'Digital Marketing Expertise',
-            desc:'Semicon, our affiliate, specializes in SEO and website design. Our skilled team is dedicated to propelling clients toward online marketing success, enhancing overall business performance'
+            desc:'Shemicon, our affiliate, specializes in SEO and website design. Our skilled team is dedicated to propelling clients toward online marketing success, enhancing overall business performance'
         },
         {
             id:3,
@@ -36,7 +36,7 @@ const AboutUs = () => {
         } , {
             id:4,
             heading:'Visionary Growth',
-            desc:'Semicon aspires to lead in India, delivering measurable business value through technology. Join us on this journey, where we redefine the web development and digital marketing landscape.'
+            desc:'Shemicon aspires to lead in India, delivering measurable business value through technology. Join us on this journey, where we redefine the web development and digital marketing landscape.'
         }
     ]
 const techStack=[
@@ -111,7 +111,7 @@ const techStack=[
     
     <h1 class="title whitespace-nowrap relative text-headingClg dark:text-white text-[22px] leading-[25px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap">
     Empowering Transformation:<br className='block md:hidden'/><span className='flex gap-2'>
-    Our Vision at <span  className='flex gap-3 relative'>   <UnderlineHeading text={"Semicon"} top={"48px"}/> <br className='block md:hidden'/>
+    Our Vision at <span  className='flex gap-3 relative'>   <UnderlineHeading text={"Shemicon"} top={"48px"}/> <br className='block md:hidden'/>
     </span>
     </span>
     <br className='block md:hidden'/>
@@ -119,7 +119,7 @@ const techStack=[
     </h1>
     </div>
     <p>
-{`Semicon is not just a web development company; it's a visionary force redefining the industry. Our Mumbai-based Technology Development and Innovation center drives cutting-edge web solutions for diverse clients, from startups to established companies. Through our affiliate, we excel in SEO, website design, and digital marketing, propelling clients to online success. Rooted in a client-centric ethos, our professional team transforms research into intelligent solutions, crafting comprehensive brands. With expertise in mobile app development and a vision to lead in India, we invite you to join us on a transformative journey, delivering measurable business value through technology across web development, digital marketing, and mobile apps.`}
+{`Shemicon is not just a web development company; it's a visionary force redefining the industry. Our Mumbai-based Technology Development and Innovation center drives cutting-edge web solutions for diverse clients, from startups to established companies. Through our affiliate, we excel in SEO, website design, and digital marketing, propelling clients to online success. Rooted in a client-centric ethos, our professional team transforms research into intelligent solutions, crafting comprehensive brands. With expertise in mobile app development and a vision to lead in India, we invite you to join us on a transformative journey, delivering measurable business value through technology across web development, digital marketing, and mobile apps.`}
     </p>
     </div>
     <div className='flex items-center justify-center'>
