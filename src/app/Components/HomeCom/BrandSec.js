@@ -73,7 +73,7 @@ const BrandSec = () => {
     {
         Data.map((item)=>{
             return <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0,transition:{duration:0.7} } }} key={item.id} className='bg-white rounded-lg  p-4 last:mr-3'>
-            <Image className='h-[70px] w-[250px]' src={item.img}/>
+            <Image alt='' className='h-[70px] w-[250px]' src={item.img}/>
             </motion.div>
         })
     }

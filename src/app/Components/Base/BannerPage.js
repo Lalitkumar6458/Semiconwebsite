@@ -7,7 +7,7 @@ const BannerPage = ({heading,bredcrum}) => {
   return (
     <div className='w-full h-[300px] relative  bg-blueDark flex items-center justify-center'>
     <div className='w-ful h-full absolute top-0 left-0 opacity-[0.2]'>
-    <Image className=' w-ful h-full object-cover ' src={require("../../../../public/Images/bannerImg.jpg")}/>
+    <Image alt={heading} className=' w-ful h-full object-cover ' src={require("../../../../public/Images/bannerImg.jpg")}/>
     </div>
   <div className='text-center relative'>
   <h1 className=' text-[2.4rem] md:text-[3.5rem] font-bold capitalize text-white'>{heading}</h1>

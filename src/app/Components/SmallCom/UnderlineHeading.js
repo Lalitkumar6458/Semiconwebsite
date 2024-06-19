@@ -16,7 +16,7 @@ const UnderlineHeading = ({text,top}) => {
       <Image
         className={`underlineImg absolute top-[${top}]`}
         src={require("../../../../public/Images/hero3-underline.png")}
-    
+    alt=''
       />
     </span>
   </div>

@@ -168,7 +168,7 @@ We Use<span  className='flex gap-3 relative'>   <UnderlineHeading text={"Technol
                 {
                     item.techList.map((each)=>{
                         return <div className='flex items-center justify-center flex-col gap-2  p-2 ' key={each.id}>
-                        <Image className='w-[100px] h-[100px] bg-white rounded-xl p-2' src={each.img} />
+                        <Image alt={each.name} className='w-[100px] h-[100px] bg-white rounded-xl p-2' src={each.img} />
                         <h4 className='text-[16px] font-semibold'>{each.name}</h4>
                         </div>
                     })

@@ -88,7 +88,7 @@ const TestimonialSec = () => {
               <div className='px-[40px] pt-[40px] pb-[38px]'>
                 <div className='flex items-center gap-[30px]'>
                   <div className=''>
-                    <Image src={item.img} width={70} height={70} className='w-[70px] h-[70px] rounded-full' />
+                    <Image alt={item.name} src={item.img} width={70} height={70} className='w-[70px] h-[70px] rounded-full' />
                   </div>
                   <div className='dark:text-white text-black'>
                     <h2 className=' text-[22px] font-bold'>{item.name}</h2>
@@ -103,7 +103,7 @@ const TestimonialSec = () => {
               </div>
               <div className='py-[24px] px-[40px] bg-hoverClr flex items-center justify-between'>
                 <div className='w-[130px] h-[40px] bg-white rounded-lg p-1'>
-                  <Image className='w-full h-full object-fill' src={item.logo} />
+                  <Image alt='' className='w-full h-full object-fill' src={item.logo} />
                 </div>
 
                 <div className='flex items-center text-[#ffa439] text-[15px] gap-1'>

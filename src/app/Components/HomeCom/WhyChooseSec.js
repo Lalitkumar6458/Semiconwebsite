@@ -117,7 +117,7 @@ const WhyChooseSec = () => {
              variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0,transition:{duration:0.7} } }}
          
         >
-          <Image src={require("../../../../public/Images/choose-us5.png")} />
+          <Image alt='' src={require("../../../../public/Images/choose-us5.png")} />
         </motion.div>
       </div>
     </motion.div>

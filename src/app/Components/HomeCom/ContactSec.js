@@ -46,6 +46,7 @@ const ContactSec = () => {
         <Image
           className="h-full absolute w-full rounded-[20px]"
           src={require("../../../../public/Images/call-to-action5.png")}
+          alt=''
         />
         <div className="relative grid grid-cols-1 md:grid-cols-2 px-[50px] py-[22px] gap-[30px]">
           <div className="flex justify-center flex-col">
@@ -67,7 +68,7 @@ const ContactSec = () => {
           </div>
           <div className="">
             {inView && (
-              <Image className="z-[50] relative" src={require("../../../../public/Images/call-to-action5-img.png")} />
+              <Image alt='' className="z-[50] relative" src={require("../../../../public/Images/call-to-action5-img.png")} />
             )}
           </div>
         </div>

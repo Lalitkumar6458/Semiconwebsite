@@ -30,7 +30,7 @@ const Counter = ({ item, index }) => {
     >
       <div className='relative group overflow-hidden flex w-full bg-countBg items-center justify-center py-[42px] px-[30px] rounded-lg gap-4' key={index}>
         <div className=''>
-          <Image src={item.icon} />
+          <Image src={item.icon} alt='' />
         </div>
         <div className='text-[36px] flex items-start flex-col font-Roboto font-semibold'>
           <CountUp end={item.count} duration={0.7} delay={0.05} />

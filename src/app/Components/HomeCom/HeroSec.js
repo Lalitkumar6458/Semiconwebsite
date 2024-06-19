@@ -22,7 +22,7 @@ const HeroSec = () => {
   
   
       </div>    
-            <Image src={require("../../../../public/Images/pattern-bg-1.jpg")} className='w-full h-full object-cover' />
+            <Image alt='' src={require("../../../../public/Images/pattern-bg-1.jpg")} className='w-full h-full object-cover' />
         </div>
             <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center h-full relative'>
     
@@ -84,6 +84,7 @@ const HeroSec = () => {
                 transition={{ delay: 1,duration:0.7 }} className=''>
                 <Image
                   src={require('../../././../../public/Images/illustration-1.png')}
+                  alt=''
                 />
                 </motion.div>
                 </div>
@@ -94,7 +95,7 @@ const HeroSec = () => {
                 <motion.div initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1,duration:0.7 }} class="single-image md:flex hidden">
-                <Image  src={require("../../././../../public/Images/illustration-1.png")} />
+                <Image  src={require("../../././../../public/Images/illustration-1.png")} alt='' />
             </motion.div>
                 </div>
             </div>

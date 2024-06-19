@@ -206,7 +206,7 @@ open={open}
   <ul>
     {Manu.map((item, index) => {
       return (
-        <li className=" text-[1.2rem] pb-[10px] font-Roboto font-medium">
+        <li key={index} className=" text-[1.2rem] pb-[10px] font-Roboto font-medium">
           <div className="flex items-center" key={item.name}>
             <Link href={item.link}>{item.name}</Link>
             {item.submenu ? (
