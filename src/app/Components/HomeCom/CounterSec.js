@@ -16,7 +16,7 @@ const CounterSec = () => {
     {
       id: 2,
       title: 'Satisfied Clients',
-      count: 7,
+      count: 10,
       icon: require("../../../../public/Images/icons/counter-icon5-2.png"),
     },
     {
