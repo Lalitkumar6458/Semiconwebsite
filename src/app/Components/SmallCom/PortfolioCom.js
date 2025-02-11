@@ -8,6 +8,12 @@ import Link from 'next/link';
 const PortfolioCom = ({DataShow=6}) => {
     const data=[
         {
+            id:11,
+            heading:'RSV Worldwide LLP',
+            img:"/Images/clientImg/rsvworldwide.png",
+            link:'https://www.rsvworldwidellp.com/'
+        },
+        {
             id:7,
             heading:'Fusion tech alloys',
             img:"/Images/clientImg/fusiontech.PNG",
@@ -16,7 +22,7 @@ const PortfolioCom = ({DataShow=6}) => {
         {
             id:8,
             heading:'K.C. Impex',
-            img:"/Images/clientImg/kcimpex.PNG",
+            img:"/Images/clientImg/kcimpexnew.png",
             link:'https://www.kcimpex.com/'
         },
         {

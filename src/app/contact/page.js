@@ -101,21 +101,21 @@ let  phoneNumber="+919326875077"
      {
        id: 1,
        heading: "Phone Number",
-       value: ["+91 93266875077"],
+       value: ["+91 8369794933"],
        icon: <FaPhoneAlt />,
        event:handlePhoneClick
      },
      {
        id: 2,
        heading: "EMAIL",
-       value: ["Shemiconinfotech@gmail.com"],
+       value: ["shemiconinfotech@gmail.com"],
        icon: <FaEnvelope/>,
        event:handleEmailClick
      },
      {
        id: 3,
        heading: "Contact Person",
-       value: ["Lalit Solanki"],
+       value: ["Vikash Kumar"],
        icon: <FaEarthAmericas />,
 
      },

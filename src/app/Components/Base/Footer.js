@@ -118,10 +118,10 @@ const Footer = () => {
                         <FaGlobe className='  text-lighBlue' />  www.Shemicon.com
                     </div>
                     <div className='flex items-center gap-2 leading-[40px] hover:text-white cursor-pointer'>
-                        <MdEmail className='  text-lighBlue' /> Shemiconinfotech@gmail.com
+                        <MdEmail className='  text-lighBlue' />  shemiconinfotech@gmail.com
                     </div>
                     <div className='flex items-center gap-2 leading-[40px] hover:text-white cursor-pointer'>
-                        <FaPhone className='  text-lighBlue' />  9326875077
+                        <FaPhone className='  text-lighBlue' />  +91 8369794933
                     </div>
                 </div>
             </div>
