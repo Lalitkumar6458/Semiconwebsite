@@ -105,6 +105,7 @@ const Page = ({params}) => {
   return (
     <div>
           <Script
+        id="service-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(generateJsonLd(singleData, params))
