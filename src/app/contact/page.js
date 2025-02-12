@@ -123,7 +123,7 @@ let  phoneNumber="+919326875077"
        id: 4,
        heading: "Address",
        value: [
-         "6th Khetwadi Lane, Mumbai: 400004",
+         "Mumbai Central, Mumbai: 400004",
        ],
        icon: <FaLocationDot />,
      },
