@@ -113,7 +113,7 @@ const Footer = () => {
                     <h3 className='text-white text-[20px] font-Roboto font-semibold'>
                         Contact
                     </h3>
-                    <p className='mt-[40px] mb-[20px]'>6th Khetwadi Lane, Mumbai: 400004</p>
+                    <p className='mt-[40px] mb-[20px]'>Mumbai, Maharashtra, India</p>
                     <div className='flex items-center gap-2 leading-[40px] hover:text-white'>
                         <FaGlobe className='  text-lighBlue' />  www.Shemicon.com
                     </div>

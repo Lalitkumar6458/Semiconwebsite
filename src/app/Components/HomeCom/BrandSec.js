@@ -16,10 +16,11 @@ const BrandSec = () => {
       }
     }, [controls, inView]);
     const Data=[
+     
         {
-            id:1,
-            img:require("../../../../public/Images/icons/khushimetal.png")
-        },
+          id:10,
+          img:require("../../../../public/Images/icons/logo1.png")
+      },
         {
             id:2,
             img:require("../../../../public/Images/icons/logo.png")
@@ -40,49 +41,77 @@ const BrandSec = () => {
             id:6,
             img:require("../../../../public/Images/icons/logo3.png")
         },
+        {
+          id:7,
+          img:require("../../../../public/Images/icons/kcLogo.webp")
+      },
+      {
+        id:8,
+        img:require("../../../../public/Images/icons/rsvLogo.webp")
+    },
+    {
+      id:9,
+      img:require("../../../../public/Images/icons/rotexMetal.webp")
+  },
+
+  {
+    id:1,
+    img:require("../../../../public/Images/icons/khushimetal.png")
+},
+  {
+    id:11,
+    img:require("../../../../public/Images/icons/shreemohansteel.webp")
+},
     ]
   return (
     <motion.div 
-    ref={observe}
-    initial='hidden'
-    animate={controls}
-    variants={{
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: { staggerChildren: 0.5, delayChildren: 0.3,duration:0.7 },
-      },
-      hidden: { opacity: 0, y: 30 },
-    }}
-    className='w-full bg-white dark:bg-[#181d42] px-[4%] py-[5%]'>
-    <div className=''>
-    <div className='flex items-center flex-col'>
-    <h3 class="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// OUR CLIENT"}</h3>
-    
-    <h1 class="title text-center whitespace-nowrap relative text-headingClg dark:text-white text-[18px] leading-[25px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1] flex gap-3 flex-wrap">
-  {"We worked with India's largest brands"}
-    </h1>
-    </div>
-    </div>
-    <div className='mt-[40px] mb-[40px]'>
-    <Marquee>
-    <motion.div  variants={{
-        visible: { transition: { staggerChildren: 0.5, delayChildren: 0.3,duration:0.7 } },
-      }} className='flex items-center gap-3'>
+      ref={observe}
+      initial='hidden'
+      animate={controls}
+      variants={{
+        visible: {
+          opacity: 1,
+          y: 0,
+          transition: { staggerChildren: 0.3, delayChildren: 0.2, duration: 0.5 },
+        },
+        hidden: { opacity: 0, y: 30 },
+      }}
+      className='w-full bg-white dark:bg-[#181d42] px-[5%] py-[6%]'
+    >
+      <div className='max-w-7xl mx-auto'>
+        <div className='flex items-center flex-col mb-12'>
+          <h3 className="subtitle text-[12px] md:text-[14px] font-semibold text-lighBlue uppercase tracking-wider">
+            {"// OUR TRUSTED PARTNERS"}
+          </h3>
+          
+          <h1 className="title text-center relative text-headingClg dark:text-white text-[24px] leading-tight md:text-[36px] font-bold md:leading-[1.2] mt-3 mb-2 z-[1]">
+            {"We Partner with India's Leading Brands"}
+          </h1>
+        </div>
 
-    {
-        Data.map((item)=>{
-            return <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0,transition:{duration:0.7} } }} key={item.id} className='bg-white rounded-lg  p-4 last:mr-3'>
-            <Image alt='' className='h-[70px] w-[250px]' src={item.img}/>
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8'>
+          {Data.map((item) => (
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { 
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.5 }
+                }
+              }}
+              key={item.id}
+              className='bg-white dark:bg-[#ffffff] rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-2 md:p-4 flex items-center justify-center group'
+            >
+              <Image
+                alt='Brand Logo'
+                className='h-[60px] w-auto object-contain transition-transform duration-300 group-hover:scale-105'
+                src={item.img}
+              />
             </motion.div>
-        })
-    }
-
- 
-    </motion.div>
-    </Marquee>
-    </div>
-
+          ))}
+        </div>
+      </div>
     </motion.div>
   )
 }

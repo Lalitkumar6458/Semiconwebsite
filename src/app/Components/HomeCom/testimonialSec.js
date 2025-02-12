@@ -8,8 +8,26 @@ import { useInView } from 'react-cool-inview';
 const TestimonialSec = () => {
   const Data = [
     {
+      id: 4,
+      name: 'Hemant Shah',
+      img: require("../../../../public/Images/icons/dasrathImg.jpg"),
+      dsgn: "CEO & Founder of KC Impex",
+      text: "Shemican Info Tech provided excellent service in designing my website. The team was professional, responsive, and delivered a well-structured, visually appealing site. I highly recommend them for quality web development.",
+      logo: require("../../../../public/Images/icons/kcLogo.webp")
+    },
+  
+   
+    {
+      id: 3,
+      name: 'Rajesh Deora',
+      img: require("../../../../public/Images/icons/rajeshImg.jpg"),
+      dsgn: "CEO & Founder",
+      text: "Shemicon's expert team provided diverse design options with exceptionally competitive pricing, delivering high-quality services within my budget - a pleasant surprise",
+      logo: require("../../../../public/Images/icons/trlogo.png")
+    },
+    {
       id: 1,
-      name: 'Bharat Modi',
+      name: 'Bharat Kumar',
       img: require("../../../../public/Images/icons/testi5-img3.png"),
       dsgn: "CEO & Founder",
       text: "I recently collaborated with Shemicon, and I'm genuinely impressed by the perfect blend of affordability and top-notch quality in their Website Designing services",
@@ -22,14 +40,6 @@ const TestimonialSec = () => {
       dsgn: "CEO & Founder",
       text: "I am exceptionally satisfied with the work undertaken by Shemicon. Their dedicated effort to bring my vision to life for our company's website exceeded my expectations",
       logo: require("../../../../public/Images/icons/logo1.png")
-    },
-    {
-      id: 3,
-      name: 'Rajesh Deora',
-      img: require("../../../../public/Images/icons/rajeshImg.jpg"),
-      dsgn: "CEO & Founder",
-      text: "Shemicon's expert team provided diverse design options with exceptionally competitive pricing, delivering high-quality services within my budget - a pleasant surprise",
-      logo: require("../../../../public/Images/icons/trlogo.png")
     },
   ];
   const controls = useAnimation();
@@ -71,7 +81,7 @@ const TestimonialSec = () => {
           <p className="subtitle text-[11px] md:text-[14px] font-semibold text-lighBlue uppercase">
             {"// CLIENT TESTIMONIAL"}
           </p>
-          <h2 className="title text-center whitespace-nowrap relative text-black dark:text-white text-[20px] leading-[35px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1]">
+          <h2 className="title text-center  relative text-black dark:text-white text-[20px] leading-[35px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1]">
             Clients Rely on Our Expertise in Website Design and SEO
           </h2>
         </div>
@@ -79,31 +89,31 @@ const TestimonialSec = () => {
 
       <motion.div  variants={{
         visible: { transition: { staggerChildren: 0.5, delayChildren: 0.3,duration:0.7 } },
-      }} className='grid grid-cols-1 md:grid-cols-3 gap-4 mt-6'>
+      }} className='grid grid-cols-1 md:grid-cols-4 gap-2 mt-6'>
         {Data.map((item) => {
           return (
             <motion.div
               key={item.id}
               variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0,transition:{duration:0.7} } }}
-              className='transition-all duration-700 ease-in-out rounded-[10px] shadow-cardShadow border border-cardBorder hover:border-[#4f7efa] hover:bg-hoverClr'
+              className='transition-all duration-700 ease-in-out rounded-[10px] shadow-cardShadow border border-cardBorder hover:border-[#4f7efa] hover:bg-hoverClr relative'
             >
-              <div className='px-[40px] pt-[40px] pb-[38px]'>
+              <div className='px-[20px] pt-[40px] pb-[38px] '>
                 <div className='flex items-center gap-[30px]'>
-                  <div className=''>
+                  {/* <div className=''>
                     <Image alt={item.name} src={item.img} width={70} height={70} className='w-[70px] h-[70px] rounded-full' />
-                  </div>
+                  </div> */}
                   <div className='dark:text-white text-black'>
                     <h3 className='text-[22px] font-bold'>{item.name}</h3>
                     <h5 className=' dark:text-textClr text-black'>{item.dsgn}</h5>
                   </div>
                 </div>
-                <div className='mt-6 dark:text-textClr text-black'>
+                <div className='mt-6 dark:text-textClr text-black h-[250px]'>
                   <p className='leading-[32px]'>
                     {item.text}
                   </p>
                 </div>
               </div>
-              <div className='py-[24px] px-[40px] bg-hoverClr flex items-center justify-between'>
+              <div className='py-[24px] px-[20px] bg-hoverClr flex items-center justify-between absolute bottom-0 w-full'>
                 <div className='w-[130px] h-[40px] bg-white rounded-lg p-1'>
                   <Image alt='' className='w-full h-full object-fill' src={item.logo} />
                 </div>

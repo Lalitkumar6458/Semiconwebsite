@@ -7,6 +7,43 @@ import Link from 'next/link'
 import { FaUserGear,FaArrowRightLong  } from "react-icons/fa6";
 import ServiceCard from '@/app/Components/SmallCom/ServiceCard'
 import { MdEmail } from "react-icons/md";
+import Script from 'next/script'
+
+// Add metadata export
+export async function generateMetadata({ params }) {
+  const singleData = ServicesData.filter((x) => x.link === '/' + params.serviceName[0])[0]
+  
+  return {
+    title: `${singleData.heading} - Your Company Name`,
+    description: singleData.pageDesc,
+    openGraph: {
+      title: `${singleData.heading} - Your Company Name`,
+      description: singleData.pageDesc,
+      url: `https://shemicon.com/services/${params.serviceName[0]}`,
+      siteName: 'Your Company Name',
+      type: 'website'
+    }
+  }
+}
+
+// Add JSON-LD script
+const generateJsonLd = (singleData, params) => {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: singleData.heading,
+    description: singleData.pageDesc,
+    provider: {
+      '@type': 'Organization',
+      name: 'Shemicon Info Tech',
+      url: 'https://shemicon.com'
+    },
+    url: `https://shemicon.com/services/${params.serviceName[0]}`,
+    areaServed: 'Worldwide',
+    serviceType: singleData.heading
+  }
+}
+
 const Page = ({params}) => {
     console.log(params.serviceName[0],"params")
 
@@ -67,6 +104,14 @@ const Page = ({params}) => {
         ]
   return (
     <div>
+          <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateJsonLd(singleData, params))
+        }}
+      />
+  
+      <div>
     <BannerPage heading={singleData.heading} bredcrum={bredcrum}/>
     <div className='px-[4%] py-[3%]'>
     <div className=''>
@@ -141,6 +186,7 @@ const Page = ({params}) => {
             </div>
                 </div>
             </div>
+    </div>
     </div>
     </div>
     </div>

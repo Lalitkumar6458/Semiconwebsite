@@ -107,3 +107,16 @@ position: relative;
     /* mix-blend-mode:darken; */
 }
 
+/* Add to your CSS file or Tailwind config */
+.mainLink:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .submenu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }

@@ -88,7 +88,7 @@ const PortfolioSec = () => {
     </div>
     </div>
     </div>
-    <PortfolioCom />
+    <PortfolioCom  />
     </motion.div>
   )
 }

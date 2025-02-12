@@ -19,7 +19,7 @@ const page = () => {
     <div>
     <BannerPage heading={"Our Portfolio"} bredcrum={bredcrum}/>
 <div className='pb-8 px-[5%]'>
-<PortfolioCom DataShow={9}/>
+<PortfolioCom DataShow={20}/>
 </div>
     </div>
   )

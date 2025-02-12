@@ -14,6 +14,12 @@ const PortfolioCom = ({DataShow=6}) => {
             link:'https://www.rsvworldwidellp.com/'
         },
         {
+            id:12,
+            heading:'Rotex Metal Inc',
+            img:"/Images/clientImg/rotexmetalinc.png",
+            link:'https://www.rotexmetalinc.com/'
+        },
+        {
             id:7,
             heading:'Fusion tech alloys',
             img:"/Images/clientImg/fusiontech.PNG",
