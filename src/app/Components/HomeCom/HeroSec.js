@@ -1,4 +1,3 @@
-
 "use client"
 import Image from 'next/image'
 // import React, { useEffect } from 'react'
@@ -34,27 +33,17 @@ const HeroSec = () => {
           >
             <div className=''>
               <div className=''>
-                <div class='content'>
-                  <motion.h3
-                    class='subtitle text-[11px] md:text-[14px] font-semibold text-lighBlue uppercase'
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2,duration:0.7 }}
-                  >
+                <div className='content'>
+                  <p className='subtitle text-[11px] md:text-[14px] font-semibold text-lighBlue uppercase'>
                     {"// Transforming Dreams into Digital Reality"}
-                  </motion.h3>
+                  </p>
       
-                  <motion.h1
-                    class='title whitespace-nowrap relative dark:text-white text-[#060922] text-[35px] leading-[35px] md:text-[56px] font-bold md:leading-[56px] mb-[20px] z-[1]'
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4,duration:0.7 }}
-                  >
+                  <h2 className='title whitespace-nowrap relative dark:text-white text-[#060922] text-[35px] leading-[35px] md:text-[56px] font-bold md:leading-[56px] mb-[20px] z-[1]'>
                     Best IT Solutions And <br />
                     <span className='flex gap-3 relative'>
                       Great <UnderlineHeading text={'Business'} top={'51px'} />
                     </span>
-                  </motion.h1>
+                  </h2>
       
                   <motion.h5
                     class='description dark:text-[#a0a5b9] text-[#060922] mb-[36px]'

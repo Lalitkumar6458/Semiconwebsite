@@ -68,10 +68,12 @@ const TestimonialSec = () => {
     className='w-full bg-white  dark:bg-[#060B2B] px-[4%] py-[5%]'>
       <div className=''>
         <div className='flex items-center flex-col'>
-          <h3 className="subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase ">{"// CLIENT TESTIMONIAL"}</h3>
-          <h1 className="title text-center whitespace-nowrap relative text-black dark:text-white text-[20 px] leading-[35px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1] flex gap-3 flex-wrap">
-            Clients Rely on Our Expertise in <br />Website Design and SEO.
-          </h1>
+          <p className="subtitle text-[11px] md:text-[14px] font-semibold text-lighBlue uppercase">
+            {"// CLIENT TESTIMONIAL"}
+          </p>
+          <h2 className="title text-center whitespace-nowrap relative text-black dark:text-white text-[20px] leading-[35px] md:text-[30px] font-bold md:leading-[40px] mb-[20px] z-[1]">
+            Clients Rely on Our Expertise in Website Design and SEO
+          </h2>
         </div>
       </div>
 
@@ -91,7 +93,7 @@ const TestimonialSec = () => {
                     <Image alt={item.name} src={item.img} width={70} height={70} className='w-[70px] h-[70px] rounded-full' />
                   </div>
                   <div className='dark:text-white text-black'>
-                    <h2 className=' text-[22px] font-bold'>{item.name}</h2>
+                    <h3 className='text-[22px] font-bold'>{item.name}</h3>
                     <h5 className=' dark:text-textClr text-black'>{item.dsgn}</h5>
                   </div>
                 </div>

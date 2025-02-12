@@ -10,18 +10,19 @@ import TestimonialSec from './Components/HomeCom/testimonialSec'
 import BrandSec from './Components/HomeCom/BrandSec'
 export default function Home() {
   return (
-    <main >
-<div className=''>
-<HeroSec/>
-<ServicesSec/>
-<AboutCom/>
-<CounterSec/>
-<WhyChooseSec/>
-<PortfolioSec/>
-<ContactSec/>
-<TestimonialSec/>
-<BrandSec/>
-</div>
+    <main>
+      <div className=''>
+        <h1 className="sr-only">Shemicon Info Tech - Web Development & Digital Solutions</h1>
+        <HeroSec/>
+        <ServicesSec/>
+        <AboutCom/>
+        <CounterSec/>
+        <WhyChooseSec/>
+        <PortfolioSec/>
+        <ContactSec/>
+        <TestimonialSec/>
+        <BrandSec/>
+      </div>
     </main>
   )
 }

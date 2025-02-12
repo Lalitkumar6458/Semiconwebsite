@@ -36,18 +36,18 @@ const ServicesSec = () => {
     >
       <div className='flex items-center justify-between flex-wrap'>
         <div className=''>
-          <h3 className='subtitle text-[11px] md:text-[14px]  font-semibold text-lighBlue uppercase '>
+          <p className='subtitle text-[11px] md:text-[14px] font-semibold text-lighBlue uppercase'>
             {"// SERVICE WE PROVIDE"}
-          </h3>
+          </p>
 
-          <h1 className='title whitespace-nowrap relative text-headingClg dark:text-white text-[35px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap'>
+          <h2 className='title whitespace-nowrap relative text-headingClg dark:text-white text-[35px] leading-[35px] md:text-[38px] font-bold md:leading-[56px] mb-[20px] z-[1] flex gap-3 flex-wrap'>
             Services What We{' '}
             <span className='flex gap-3 relative'>
               {' '}
               <br className=' block md:hidden' />{' '}
               <UnderlineHeading text={'Provides'} top={'48px'} />
             </span>
-          </h1>
+          </h2>
         </div>
         <div className=''>
           <ComButton heading={'All Services'} link={'/services'} />
