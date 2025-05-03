@@ -16,7 +16,10 @@ const BrandSec = () => {
       }
     }, [controls, inView]);
     const Data=[
-     
+      {
+        id:12,
+        img:require("../../../../public/Images/icons/abhinav-overseas.png")
+    },
         {
           id:10,
           img:require("../../../../public/Images/icons/logo1.png")

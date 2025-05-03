@@ -3,7 +3,7 @@ export   const ServicesData=[
       id:1,
       heading:"Web Development",
       desc:'Elevate your brand with captivating visual design, embodying our core philosophy. Our approach blends elegance and impact, creating a distinct and memorable brand identity.',
-      link:'/web_development',
+      link:'/web-development',
       list:[
         {
           heading:"UI/UX Design",
@@ -65,7 +65,7 @@ export   const ServicesData=[
       id:2,
       heading:"Apps Development",
       desc:`Innovative mobile app development tailored to your needs. Enhance your digital presence and achieve business goals with user-centric solutions crafted for success.`,
-      link:'/app_development',
+      link:'/app-development',
       img:'https://img.freepik.com/free-vector/source-code-concept-illustration_114360-5487.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
       list:[
         {
@@ -124,7 +124,7 @@ export   const ServicesData=[
       id:3,
       heading:"Website Care",
       desc:"Elevate your website's performance with our meticulous care services. We prioritize optimal functionality, security, and a seamless user experience, ensuring your online presence thrives effortlessly.",
-      link:'/website_care',
+      link:'/website-care',
       img:'https://img.freepik.com/free-vector/tiny-people-testing-quality-assurance-software-isolated-flat-vector-illustration-cartoon-character-fixing-bugs-hardware-device-application-test-it-service-concept_74855-10172.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
       list:[
         {
@@ -183,7 +183,7 @@ export   const ServicesData=[
       id:4,
       heading:"Domain & Hosting",
       desc:"Reliable domain and hosting solutions, providing a secure foundation for your online presence. Elevate your website's performance with our robust and scalable hosting services.",
-      link:'/domain_and_hosting',
+      link:'/domain-hosting',
       img:'https://img.freepik.com/free-vector/gradient-website-hosting-illustration_23-2149250983.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
       list:[
         {
@@ -242,7 +242,7 @@ export   const ServicesData=[
       id:5,
       heading:"Digital Marketing",
       desc:"Boost your brand's online presence with our strategic digital marketing solutions. From SEO to social media, we drive visibility and engagement for your business success",
-      link:'/digital_marketing',
+      link:'/digital-marketing',
       img:'https://img.freepik.com/free-vector/marketing-consulting-concept-illustration_114360-9027.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
       list:[
         {
@@ -301,7 +301,7 @@ export   const ServicesData=[
       id:6,
       heading:"Email Solution",
       desc:'Elevate your communication game with our efficient email solutions. Streamline your messaging and enhance collaboration for seamless business communication.',
-      link:'/email_solution',
+      link:'/email-solutions',
       img:'https://img.freepik.com/free-vector/email-marketing-internet-chatting-24-hours-support_335657-3009.jpg?size=626&ext=jpg&ga=GA1.1.712448265.1703914140&semt=ais',
       list:[
         {

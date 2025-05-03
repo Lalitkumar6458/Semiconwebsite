@@ -11,16 +11,17 @@ import Script from 'next/script'
 
 // Add metadata export
 export async function generateMetadata({ params }) {
+  console.log(params.serviceName[0],"params")
   const singleData = ServicesData.filter((x) => x.link === '/' + params.serviceName[0])[0]
   
   return {
-    title: `${singleData.heading} - Your Company Name`,
-    description: singleData.pageDesc,
+    title: `${singleData?.heading} - Shemicon Info Tech`,
+    description: singleData?.pageDesc,
     openGraph: {
-      title: `${singleData.heading} - Your Company Name`,
-      description: singleData.pageDesc,
+      title: `${singleData?.heading} - Shemicon Info Tech`,
+      description: singleData?.pageDesc,
       url: `https://shemicon.com/services/${params.serviceName[0]}`,
-      siteName: 'Your Company Name',
+      siteName: 'Shemicon Info Tech',
       type: 'website'
     }
   }
@@ -31,8 +32,8 @@ const generateJsonLd = (singleData, params) => {
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: singleData.heading,
-    description: singleData.pageDesc,
+    name: singleData?.heading,
+    description: singleData?.pageDesc,
     provider: {
       '@type': 'Organization',
       name: 'Shemicon Info Tech',
@@ -40,7 +41,7 @@ const generateJsonLd = (singleData, params) => {
     },
     url: `https://shemicon.com/services/${params.serviceName[0]}`,
     areaServed: 'Worldwide',
-    serviceType: singleData.heading
+    serviceType: singleData?.heading
   }
 }
 
@@ -68,36 +69,36 @@ const Page = ({params}) => {
  const servicesList=   [
         {
           name:"Website Devlopment",
-          link:"/services/web_development",
+          link:"/services/web-development",
           icon:<FaUserGear />
         },
         {
           name:"App Developmwnt",
-          link:"/services/app_development",
+          link:"/services/app-development",
           icon:<FaUserGear />
         },
         
         {
           name:"Website Care",
-          link:"/services/website_care",
+          link:"/services/website-care",
           icon:<FaUserGear />
         },
         
         {
           name:"Domain & Hosting",
-          link:"/services/domain_and_hosting",
+          link:"/services/domain-hosting",
           icon:<FaUserGear />
         },
         
         {
           name:"Digital Marketing",
-          link:"/services/digital_marketing",
+          link:"/services/digital-marketing",
           icon:<FaUserGear />
         },
         
         {
           name:"Email Solution",
-          link:"/services/email_solution",
+          link:"/services/email-solutions",
           icon:<FaUserGear />
         },
         
@@ -113,7 +114,7 @@ const Page = ({params}) => {
       />
   
       <div>
-    <BannerPage heading={singleData.heading} bredcrum={bredcrum}/>
+    <BannerPage heading={singleData?.heading} bredcrum={bredcrum}/>
     <div className='px-[4%] py-[3%]'>
     <div className=''>
     <div className='grid grid-cols-1 md:grid-cols-4 gap-4'>
