@@ -143,7 +143,7 @@ const Header = () => {
               <div className="flex items-center justify-between py-3">
                 <Link
                   href={item.link}
-                  className="font-medium text-white hover:text-orangeClr transition-colors"
+                  className="font-medium text-gray-900 dark:text-gray-100 hover:text-orangeClr dark:hover:text-orangeClr transition-colors"
                   onClick={() => setOpen(false)}
                 >
                   {item.name}
@@ -151,7 +151,7 @@ const Header = () => {
                 {item.submenu && (
                   <button
                     onClick={() => toggleSubmenu(item.name)}
-                    className="p-1 text-white hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full"
+                    className="p-1 text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-full"
                   >
                     {mobileSubmenu[item.name] ? 
                       <LiaAngleUpSolid className="w-5 h-5" /> : 
@@ -170,7 +170,7 @@ const Header = () => {
                       <Link
                         key={sub.name}
                         href={sub.link}
-                        className="block py-2 text-white text-sm hover:text-orangeClr transition-colors"
+                        className="block py-2 text-gray-700 dark:text-gray-300 text-sm hover:text-orangeClr dark:hover:text-orangeClr transition-colors"
                         onClick={() => setOpen(false)}
                       >
                         {sub.name}
