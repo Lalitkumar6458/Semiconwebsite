@@ -7,6 +7,18 @@ import { FiArrowUpRight } from 'react-icons/fi'
 import Link from 'next/link';
 const PortfolioCom = ({DataShow=6}) => {
     const data=[
+         {
+            id:15,
+            heading:'Mangalam Charitable Trust',
+            img:"/Images/clientImg/mct.png",
+            link:'https://mangalamct.org/'
+        },
+           {
+            id:14,
+            heading:'Mandeep Steel India',
+            img:"/Images/clientImg/mandeepsteel.png",
+            link:'https://mandeepsteelindia.com/'
+        },
         {
             id:13,
             heading:'Abhinav Overseas',
@@ -70,7 +82,7 @@ const PortfolioCom = ({DataShow=6}) => {
             id:5,
             heading:'Khushi Metal & Alloys',
             img:"/Images/clientImg/khushimetal.PNG",
-            link:'https://khushimetal.vercel.app/'
+            link:'https://khushimetal.com'
         },
         {
             id:6,
